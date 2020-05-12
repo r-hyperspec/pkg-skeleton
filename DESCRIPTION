@@ -7,7 +7,7 @@ Authors@R: c(
     person("Claudia",   "Beleites",  role = c("aut","cre"), email = "Claudia.Beleites@chemometrix.gmbh"),
     person("Erick",   "Oduniyi", email = "eeoduniyi@gmail.com"))
 Description: 
-    support functions for plotting
+    support functions for plotting.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyLoad: yes
