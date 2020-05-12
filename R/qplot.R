@@ -158,5 +158,6 @@ qplotspc <- function(x,
     p <- qplotspc(chondro)
     expect_is(p, "ggplot")
   })
-
+  
+  # Testing R 4.0.0
 }
