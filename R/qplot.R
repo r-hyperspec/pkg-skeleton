@@ -159,5 +159,4 @@ qplotspc <- function(x,
     expect_is(p, "ggplot")
   })
   
-  # Testing R 4.0.0
 }
