@@ -1,6 +1,17 @@
-language: r
-r: release
-warnings_are_errors: false
+language: R
+sudo: false
+cache: packages
+warnings_are_errors: true
+
+os:
+  - linux
+  - osx
+
+r:
+  - oldrel
+  - release
+  - devel
+
 script:
 - R -e "install.packages (c ('roxygen2', 'dbplyr')); roxygen2::roxygenize ('.')"
 - R CMD build .
