@@ -15,11 +15,7 @@
 ##' @importFrom  testthat with_reporter
 ##' @importFrom  testthat get_reporter
 ##' @export
-##' @examples
-##'
-##' hyperSpec.dplyr.unittest ()
-##'
-hyperSpec.dplyr.skeleton.unittest <- function (){
+hyperSpec.skeleton.unittest <- function (){
   if (!requireNamespace("testthat", quietly=TRUE)) {
     warning("Package testthat required to run the unit tests.")
     return(NA)
