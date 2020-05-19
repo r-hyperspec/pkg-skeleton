@@ -1,0 +1,112 @@
+[
+    {
+        "name": "1 - Ready",
+        "description": null,
+        "color": "CCCCCC"
+    },
+    {
+        "name": "2 - Working <= 5",
+        "description": null,
+        "color": "CCCCCC"
+    },
+    {
+        "name": "3 - Review",
+        "description": null,
+        "color": "CCCCCC"
+    },
+    {
+        "name": "4 - Done",
+        "description": null,
+        "color": "CCCCCC"
+    },
+    {
+        "name": "blocked 🚫",
+        "description": null,
+        "color": "f9646e"
+    },
+    {
+        "name": "bug 💣",
+        "description": null,
+        "color": "ee0701"
+    },
+    {
+        "name": "confirmed",
+        "description": null,
+        "color": "b60205"
+    },
+    {
+        "name": "documentation 📘",
+        "description": null,
+        "color": "000080"
+    },
+    {
+        "name": "duplicate",
+        "description": "This issue or pull request already exists",
+        "color": "cfd3d7"
+    },
+    {
+        "name": "enhancement",
+        "description": "New feature or request",
+        "color": "84b6eb"
+    },
+    {
+        "name": "good first issue",
+        "description": "Good for newcomers",
+        "color": "7057ff"
+    },
+    {
+        "name": "guideline",
+        "description": null,
+        "color": "57dd4d"
+    },
+    {
+        "name": "help wanted",
+        "description": "Extra attention is needed",
+        "color": "128A0C"
+    },
+    {
+        "name": "invalid",
+        "description": "This doesn't seem right",
+        "color": "e6e6e6"
+    },
+    {
+        "name": "priority high/urgent",
+        "description": null,
+        "color": "FF0000"
+    },
+    {
+        "name": "priority low",
+        "description": null,
+        "color": "C0ffA0"
+    },
+    {
+        "name": "priority medium",
+        "description": null,
+        "color": "FFC000"
+    },
+    {
+        "name": "Proposal",
+        "description": null,
+        "color": "5319e7"
+    },
+    {
+        "name": "question ❔",
+        "description": "Further information is requested",
+        "color": "800080"
+    },
+    {
+        "name": "ready ✔️",
+        "description": null,
+        "color": "60ff60"
+    },
+    {
+        "name": "unit test",
+        "description": null,
+        "color": "ffff00"
+    },
+    {
+        "name": "wontfix",
+        "description": "This will not be worked on",
+        "color": "ffffff"
+    }
+]
