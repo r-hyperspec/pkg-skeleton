@@ -12,10 +12,8 @@ r:
   - release
   - devel
 
-script:
+before-script:
 - R -e "install.packages (c ('roxygen2', 'dbplyr')); roxygen2::roxygenize ('.')"
-- R CMD build .
-- R CMD check *tar.gz
 
 after-success:
 - Rscript -e "covr::codecov()"
