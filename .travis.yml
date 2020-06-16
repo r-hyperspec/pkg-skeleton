@@ -1,7 +1,7 @@
 language: R
 sudo: false
 cache: packages
-warnings_are_errors: false
+warnings_are_errors: true
 
 os:
   - linux
@@ -11,6 +11,11 @@ r:
   - oldrel
   - release
   - devel
+  
+jobs:
+  exclude:
+  - os: osx
+    r: devel
 
 before-script:
 - R -e "install.packages (c ('roxygen2', 'dbplyr')); roxygen2::roxygenize ('.')"
