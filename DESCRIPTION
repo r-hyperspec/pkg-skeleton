@@ -1,31 +1,25 @@
-Package: hyperSpec.skeleton
+Package: 
 Type: Package
-Title: fortify hyperSpec for use with tidyverse (skeleton)
-Version: 0.1.0
+Title: 
+Version: 0.0.0.9000
 Maintainer: Erick Oduniyi <eeoduniyi@gmail.com>
 Authors@R: c(
-    person("Claudia",   "Beleites",  role = c("aut","cre"), email = "Claudia.Beleites@chemometrix.gmbh"),
-    person("Erick",   "Oduniyi", email = "eeoduniyi@gmail.com"))
-Description: support functions for plotting.
+    person("Claudia",   "Beleites",  role = c("aut"), email = "Claudia.Beleites@chemometrix.gmbh"),
+    person("Erick",     "Oduniyi", role = c("aut","cre"), email = "eeoduniyi@gmail.com")),
+    person("Vilmantas", "Gegzna", role = c("aut"))),
+    person("Bryan",     "Hanson", role = c("aut")))
+Description: 
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyLoad: yes
 LazyData: yes
 Depends:
-    hyperSpec (>= 0.99-20191213),
-    dplyr,
-    magrittr,
-    ggplot2
+    hyperSpec
 Imports: 
-    testthat,
-    methods
+    hySpc.testthat
 Suggests:
     knitr,
-    dtplyr,
-    covr
 VignetteBuilder: knitr
 RoxygenNote: 7.1.0
 Roxygen: list(markdown = TRUE)
 Collate: 
-    'unittest.R'
-    'qplot.R'
