@@ -1,4 +1,4 @@
-library(testthat)
-library(hyperSpec.skeleton)
+library(hySpc.testthat)
+library(SKELETON)
 
-test_check("hyperSpec.skeleton")
+test_check("SKELETON")
