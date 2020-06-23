@@ -19,6 +19,7 @@ Imports:
     hySpc.testthat
 Suggests:
     knitr,
+    covr
 URL: 
     https://github.com/r-hyperspec/hySpc.skeleton
 BugReports: https://github.com/r-hyperspec/hySpc.skeleton/issues
