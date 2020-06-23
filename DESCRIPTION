@@ -19,7 +19,9 @@ Imports:
     hySpc.testthat
 Suggests:
     knitr,
+URL: 
+    https://github.com/r-hyperspec/hySpc.skeleton
+BugReports: https://github.com/r-hyperspec/hySpc.skeleton/issues
 VignetteBuilder: knitr
-RoxygenNote: 7.1.0
-Roxygen: list(markdown = TRUE)
 Collate: 
+RoxygenNote: 7.1.0
