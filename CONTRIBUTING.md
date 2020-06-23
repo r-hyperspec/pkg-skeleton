@@ -63,7 +63,7 @@ The branch `develop` contains latest delivered development changes for the next 
 
 You *should not* directly contribute to `develop`, unless the change is trivial (e.g. a typo). Instead, for any new feature or bugfix, please create a separate supporting branch. We use a default naming convention for them:
 
-* `feature/###-<feature_name>` for new features. Generally, for a new feature you should open an issue which *at least* describes the intended feature; it may go further and allow for discussion and refinement before much effort is expended.  `###` is the corresponding [issue number](https://github.com/cbeleites/SKELETON/issues).
+* `feature/###-<feature_name>` for new features. Generally, for a new feature you should open an issue which *at least* describes the intended feature; it may go further and allow for discussion and refinement before much effort is expended.  `###` is the corresponding [issue number](https://github.com/r-hyperspec/SKELETON/issues).
 * `bugfix/###-<bugfix_name>` for bugfixes
 * `release/x.y.z` for release preparation, where `x.y.z.` is the version to be released. See section "Release process" below for details.
 
