@@ -14,6 +14,8 @@ package skeleton for hyperSpec ecosystem
 
 When creating a repo, 
 
+- [ ] rename `hySpc.skeleton.Rproj` with new package name
+
 - replace `SKELETON` with new package name
   - [ ] `LICENSE`
   - [ ] `NEWS.md`
