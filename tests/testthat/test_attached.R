@@ -1,3 +1,3 @@
 # C. Beleites
 # run all tests attached to objects
-unittest("SKELETON")
+hySpc.testthat::unittest("SKELETON")
