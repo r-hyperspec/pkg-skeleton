@@ -25,7 +25,7 @@ development:
 #       menu:
 #       - text: "Documentation for version of package:"
 #       - text: Released
-#         href: https://cbeleites.github.io/ [..pkg-name...] /
+#         href: https://r-hyperspec.github.io/ [..pkg-name...] /
 #       - text: In-development
 #         href: https://r-hyperspec.github.io/ [...pkg-name...] /dev/
 
