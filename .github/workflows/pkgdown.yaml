@@ -39,8 +39,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          install.packages("remotes")
-          install.packages("devtools")
+          install.packages(c("remotes", "devtools"))
           remotes::install_deps(dependencies = TRUE)
           # remotes::install_dev("pkgdown")
           remotes::install_github("forked-packages/pkgdown")
