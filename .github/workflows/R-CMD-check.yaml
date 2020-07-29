@@ -123,5 +123,6 @@ jobs:
           name: ${{ runner.os }}-r${{ matrix.config.r }}-results
           path: check
 
-      - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v1
+      - name: Test coverage & upload report to Codecov
+        run: covr::codecov()
+        shell: Rscript {0}
