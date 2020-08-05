@@ -50,7 +50,7 @@ jobs:
       - name: Roxygenize
         run: |
           # Vignettes are not needed for coverage tests
-          devtools::document("./hyperSpec", roclets = c('rd', 'collate', 'namespace'))
+          devtools::document(roclets = c('rd', 'collate', 'namespace'))
         shell: Rscript {0}
 
       - name: Test coverage
