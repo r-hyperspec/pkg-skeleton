@@ -42,9 +42,15 @@ jobs:
 
       - name: Install dependencies
         run: |
-          install.packages(c("remotes"))
+          install.packages(c("remotes", "devtools"))
           remotes::install_deps(dependencies = TRUE)
           remotes::install_cran("covr")
+        shell: Rscript {0}
+
+      - name: Roxygenize
+        run: |
+          # Vignettes are not needed for coverage tests
+          devtools::document("./hyperSpec", roclets = c('rd', 'collate', 'namespace'))
         shell: Rscript {0}
 
       - name: Test coverage
