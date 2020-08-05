@@ -11,7 +11,7 @@ demo_function <- function() {
 
 # Unit tests -----------------------------------------------------------------
 
-test(demo_function) <- function() {
+hySpc.testthat::test(demo_function) <- function() {
   context("demo_function")
 
   expect_silent(demo_function())
