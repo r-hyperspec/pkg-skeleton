@@ -16,6 +16,8 @@ jobs:
   exclude:
   - os: osx
     r: devel
+  - os: osx
+    r:  oldrel
 
 before_script:
   - R -e "install.packages('roxygen2'); roxygen2::roxygenize('.', roclets = c('rd', 'collate', 'namespace', 'vignette'))"
