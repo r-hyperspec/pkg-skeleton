@@ -26,4 +26,8 @@ URL:
     https://github.com/r-hyperspec/hySpc.skeleton
 BugReports: https://github.com/r-hyperspec/hySpc.skeleton/issues
 VignetteBuilder: knitr
-RoxygenNote: 7.1.0
+RoxygenNote: 7.1.1
+Collate: 
+    'demo_function.R'
+    'package.R'
+    'unittestdata.R'
