@@ -57,8 +57,8 @@ When creating a new package (repository):
 
 # R Package **hySpc.skeleton**
 
-[**R**](https://www.r-project.org/) package **hySpc.skeleton** is a member of the [**`r-hyperspec`**](https://r-hyperspec.github.io/) packages family.
-The purpose of **hySpc.skeleton** is ... **WRITE THE PURPOSE OF THIS PACKAGE** 
+[**R**](https://www.r-project.org/) package **hySpc.skeleton** is a member of the [**`r-hyperspec`**](https://r-hyperspec.github.io/) packages family, which ...
+**WRITE THE PURPOSE OF THIS PACKAGE**  
 
 <!-- ---------------------------------------------------------------------- -->
 
@@ -66,7 +66,7 @@ The purpose of **hySpc.skeleton** is ... **WRITE THE PURPOSE OF THIS PACKAGE**
 
 There are two versions of **hySpc.skeleton** online documentation:
 
-a. for the [released version](https://r-hyperspec.github.io/hySpc.skeleton/).  
+a. for the [released version](https://r-hyperspec.github.io/hySpc.skeleton/) of package,  
 b. for the [development version](https://r-hyperspec.github.io/hySpc.skeleton/dev/) of package.
 
 The documentation of the other **`r-hyperspec`** family packages can be found at [r-hyperspec.github.io](https://r-hyperspec.github.io/).
@@ -126,13 +126,13 @@ Sys.setenv(R_REMOTES_NO_ERRORS_FROM_WARNINGS = "true")
 # Install packages remotes and devtools
 install.packages(c("remotes", "devtools"))
 
-# Install hyperSpec's dependencies
+# Install hySpc.skeleton's dependencies
 remotes::install_deps(dependencies = TRUE)
 
-# Create hyperSpec's documentation
+# Create hySpc.skeleton's documentation
 devtools::document()
 
-# Install package hyperSpec and its dependencies
+# Install package hySpc.skeleton
 devtools::install(build_vignettes = TRUE)
 ```
 
