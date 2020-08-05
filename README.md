@@ -46,7 +46,7 @@ When creating a new package (repository):
 [![CRAN status](https://www.r-pkg.org/badges/version-last-release/hySpc.skeleton)](https://cran.r-project.org/package=hySpc.skeleton)
 <!--[![metacran downloads](https://cranlogs.r-pkg.org/badges/grand-total/hySpc.skeleton)](https://cran.r-project.org/package=hySpc.skeleton)-->
 <!--[![metacran downloads](https://cranlogs.r-pkg.org/badges/hySpc.skeleton)](https://cran.r-project.org/package=hySpc.skeleton)-->
-[![R-CMD-check](https://github.com/cbeleites/hySpc.skeleton/workflows/R-CMD-check/badge.svg?branch=develop)](https://github.com/cbeleites/hySpc.skeleton/actions)
+[![R-CMD-check](https://github.com/r-hyperspec/hySpc.skeleton/workflows/R-CMD-check/badge.svg)](https://github.com/cbeleites/hySpc.skeleton/actions)
 [![Travis](https://travis-ci.com/r-hyperspec/hySpc.skeleton.svg?branch=develop)](https://travis-ci.com/github/r-hyperspec/hySpc.skeleton)
 ![Website (pkgdown)](https://github.com/r-hyperspec/hySpc.skeleton/workflows/Website%20(pkgdown)/badge.svg)
 [![Codecov](https://codecov.io/gh/cbeleites/hySpc.skeleton/branch/develop/graph/badge.svg)](https://codecov.io/gh/cbeleites/hySpc.skeleton?branch=develop)
