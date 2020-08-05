@@ -70,37 +70,27 @@
 
       </header><div class="row">
   <div class="contents col-md-9">
-<div id="hyperspec-package-skeleton" class="section level1">
+
+<div id="todo-when-creating-a-new-package-repository" class="section level1">
 <div class="page-header"><h1 class="hasAnchor">
-<a href="#hyperspec-package-skeleton" class="anchor"></a>hyperSpec Package Skeleton</h1></div>
-<!-- badges: start -->
-<!--
-[![CRAN
-status](https://www.r-pkg.org/badges/version/SKELETON)](https://cran.r-project.org/package=SKELETON)
-[![Build Status on Travis](https://travis-ci.com/r-hyperspec/SKELETON.svg?branch=master) (master; Linux, Mac))](https://travis-ci.com/github/r-hyperspec/SKELETON)
-[![Build status on Appveyor](https://ci.appveyor.com/api/projects/status/APPVEYOR-CODE?svg=true) (Windows)](https://ci.appveyor.com/project/r-hyperspec/SKELETON)
-[![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
-[![Codecov test coverage](https://codecov.io/gh/r-hyperspec/SKELETON/branch/master/graph/badge.svg) (master)](https://codecov.io/gh/r-hyperspec/SKELETON?branch=master)
--->
-<!-- badges: end -->
-<p>package skeleton for hyperSpec ecosystem</p>
-<p>When creating a repo,</p>
-<ul>
-<li><p><input type="checkbox" disabled>
-rename <code>hySpc.skeleton.Rproj</code> with new package name</p></li>
-<li>
-<p>replace <code>SKELETON</code> with new package name</p>
+<a href="#todo-when-creating-a-new-package-repository" class="anchor"></a><strong>TODO</strong> When Creating a New Package (Repository)</h1></div>
+<p>Repository <strong><code>hySpc.skeleton</code></strong> is a package template (“skeleton”) for <strong><code>r-hyperspec</code></strong> family packages.</p>
+<p>When creating a new package (repository):</p>
 <ul>
 <li>
-<input type="checkbox" disabled><code>LICENSE</code>
+<input type="checkbox" disabled>
+replace words <code>SKELETON</code> and <code>hySpc.skeleton</code> with the new package name in:<ul>
+<li>
+<input type="checkbox" disabled><code>DESCRIPTION</code>
 </li>
 <li>
 <input type="checkbox" disabled><code>NEWS.md</code>
 </li>
 <li>
-<input type="checkbox" disabled><code>README.md</code><ul>
-<li>appveyor badge needs appveyor code</li>
-</ul>
+<input type="checkbox" disabled><code>README.md</code>
+</li>
+<li>
+<input type="checkbox" disabled><code>LICENSE</code>
 </li>
 <li>
 <input type="checkbox" disabled><code>tests/testthat.R</code>
@@ -108,11 +98,65 @@ rename <code>hySpc.skeleton.Rproj</code> with new package name</p></li>
 <li>
 <input type="checkbox" disabled><code>tests/testthat/test_attached.R</code>
 </li>
+<li>
+<input type="checkbox" disabled>
+other files</li>
 </ul>
 </li>
 <li>
-<p>create issue labels</p>
-<ul>
+<input type="checkbox" disabled>
+update <code>DESCRIPTION</code>:<ul>
+<li>
+<input type="checkbox" disabled>
+title</li>
+<li>
+<input type="checkbox" disabled>
+description</li>
+<li>
+<input type="checkbox" disabled>
+the list of authors and contributors</li>
+<li>
+<input type="checkbox" disabled>
+license</li>
+<li>
+<input type="checkbox" disabled>
+other fields</li>
+</ul>
+</li>
+<li>
+<input type="checkbox" disabled>
+update licensing information in<ul>
+<li>
+<input type="checkbox" disabled><code>DESCRIPTION</code>
+</li>
+<li>
+<input type="checkbox" disabled><code>LICENSE</code>
+</li>
+<li>
+<input type="checkbox" disabled><code>README.md</code>
+</li>
+<li>
+<input type="checkbox" disabled>
+elswhere</li>
+</ul>
+</li>
+<li>
+<input type="checkbox" disabled>
+update <code>README</code>:<ul>
+<li>
+<input type="checkbox" disabled>
+update badges</li>
+<li>
+<input type="checkbox" disabled>
+update installation instructions (e.g., instead of <code><a href="https://devtools.r-lib.org//reference/install.html">devtools::install(build_vignettes = TRUE)</a></code> the following code might be more appropriate if no vignettes are included <code><a href="https://devtools.r-lib.org//reference/install.html">devtools::install()</a></code>)</li>
+<li>
+<input type="checkbox" disabled>
+update other information, if needed.</li>
+</ul>
+</li>
+<li>
+<input type="checkbox" disabled>
+create issue labels:<ul>
 <li>
 <input type="checkbox" disabled>
 apply github labels (in <code>github-helpers/</code>),</li>
@@ -122,8 +166,97 @@ delete <code>github-helpers/</code>
 </li>
 </ul>
 </li>
+<li>
+<input type="checkbox" disabled><em>update this list of TODOs</em>
+</li>
+<li>
+<input type="checkbox" disabled>
+Delete this TODO section.</li>
 </ul>
+<hr>
+<!-- END: delete this TODO section, when not needed --><!-- ---------------------------------------------------------------------- --><!-- badges: start --><p><a href="https://cran.r-project.org/package=hySpc.skeleton"><img src="https://www.r-pkg.org/badges/version-last-release/hySpc.skeleton" alt="CRAN status"></a> <!--[![metacran downloads](https://cranlogs.r-pkg.org/badges/grand-total/hySpc.skeleton)](https://cran.r-project.org/package=hySpc.skeleton)--> <!--[![metacran downloads](https://cranlogs.r-pkg.org/badges/hySpc.skeleton)](https://cran.r-project.org/package=hySpc.skeleton)--> <a href="https://github.com/cbeleites/hySpc.skeleton/actions"><img src="https://github.com/cbeleites/hySpc.skeleton/workflows/R-CMD-check/badge.svg?branch=develop" alt="R-CMD-check"></a> <a href="https://travis-ci.com/github/r-hyperspec/hySpc.skeleton"><img src="https://travis-ci.com/r-hyperspec/hySpc.skeleton.svg?branch=develop" alt="Travis"></a> <a href="https://codecov.io/gh/cbeleites/hySpc.skeleton?branch=develop"><img src="https://codecov.io/gh/cbeleites/hySpc.skeleton/branch/develop/graph/badge.svg" alt="Codecov"></a> <a href="https://www.repostatus.org/#wip"><img src="https://www.repostatus.org/badges/latest/wip.svg" alt="Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public."></a> <!-- badges: end --></p>
 </div>
+<div id="r-package-hyspcskeleton" class="section level1">
+<h1 class="hasAnchor">
+<a href="#r-package-hyspcskeleton" class="anchor"></a>R Package <strong>hySpc.skeleton</strong>
+</h1>
+<p><a href="https://www.r-project.org/"><strong>R</strong></a> package <strong>hySpc.skeleton</strong> is a member of the <a href="https://r-hyperspec.github.io/"><strong><code>r-hyperspec</code></strong></a> packages family. The purpose of <strong>hySpc.skeleton</strong> is … <strong>WRITE THE PURPOSE OF THIS PACKAGE</strong></p>
+<!-- ---------------------------------------------------------------------- -->
+<div id="documentation" class="section level2">
+<h2 class="hasAnchor">
+<a href="#documentation" class="anchor"></a>Documentation</h2>
+<p>There are two versions of <strong>hySpc.skeleton</strong> online documentation:</p>
+<p>a. for the <a href="https://r-hyperspec.github.io/hySpc.skeleton/">released version</a>.</p>
+<p>b. for the <a href="https://r-hyperspec.github.io/hySpc.skeleton/dev/">development version</a> of package.</p>
+<p>The documentation of the other <strong><code>r-hyperspec</code></strong> family packages can be found at <a href="https://r-hyperspec.github.io/">r-hyperspec.github.io</a>.</p>
+<!-- ---------------------------------------------------------------------- -->
+</div>
+<div id="installation" class="section level2">
+<h2 class="hasAnchor">
+<a href="#installation" class="anchor"></a>Installation</h2>
+<div id="install-from-cran" class="section level3">
+<h3 class="hasAnchor">
+<a href="#install-from-cran" class="anchor"></a>Install from CRAN</h3>
+<p>You can install the released version of <strong>hySpc.skeleton</strong> from <a href="https://cran.r-project.org/package=hySpc.skeleton">CRAN</a> with:</p>
+<div class="sourceCode" id="cb1"><pre class="downlit">
+<span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span>(<span class="st">"hySpc.skeleton"</span>)
+</pre></div>
+</div>
+<div id="install-from-github" class="section level3">
+<h3 class="hasAnchor">
+<a href="#install-from-github" class="anchor"></a>Install from GitHub</h3>
+<p>You can install the development version of the package from <a href="https://github.com/r-hyperspec/hySpc.skeleton">GitHub</a>:</p>
+<div class="sourceCode" id="cb2"><pre class="downlit">
+<span class="co">if</span> (<span class="op">!</span><span class="fu"><a href="https://rdrr.io/r/base/library.html">require</a></span>(<span class="kw"><a href="https://remotes.r-lib.org">remotes</a></span>)) {<span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span>(<span class="st">"remotes"</span>)}
+<span class="kw">remotes</span>::<span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span>(<span class="st">"r-hyperspec/hySpc.skeleton"</span>)
+</pre></div>
+<p><strong>NOTE 1:</strong> Usually, “Windows” users need to download, install and properly configure <strong>Rtools</strong> (see <a href="https://cran.r-project.org/bin/windows/Rtools/">these instructions</a>) to make the code above work.</p>
+<p><strong>NOTE 2:</strong> This method will <strong>not</strong> install package’s documentation (help pages and vignettes) into your computer. So you can either use the <a href="https://r-hyperspec.github.io/">online documentation</a> or build the package from source (see the next section).</p>
+</div>
+<div id="install-from-source" class="section level3">
+<h3 class="hasAnchor">
+<a href="#install-from-source" class="anchor"></a>Install from Source</h3>
+<ol>
+<li>From the <strong>hySpc.skeleton</strong>’s GitHub <a href="https://github.com/r-hyperspec/hySpc.skeleton">repository</a>:
+<ul>
+<li>If you use Git, <code>git clone</code> the branch of interest. You may need to fork it before cloning.</li>
+<li>Or just chose the branch of interest (1 in Figure below), download a ZIP archive with the code (2, 3) and unzip it on your computer.<br><img src="https://user-images.githubusercontent.com/12725868/89338263-ffa1dd00-d6a4-11ea-94c2-fa36ee026691.png" alt="image">
+</li>
+</ul>
+</li>
+<li>Open the downloaded directory in RStudio (preferably, as an RStudio project).
+<ul>
+<li>The code below works correctly only if your current working directory coincides with the root of the repository, i.e., if it is in the directory that contains file <code>README.md</code>.</li>
+<li>If you open RStudio project correctly (e.g., by clicking <code>project.Rproj</code> icon <img src="https://user-images.githubusercontent.com/12725868/89340903-26621280-d6a9-11ea-8299-0ec5e9cf7e3e.png" alt="image"> in the directory), then the working directory is set correctly by default.</li>
+</ul>
+</li>
+<li>In RStudio ‘Console’ window, run the code (provided below) to:
+a. Install packages <strong>remotes</strong> and <strong>devtools</strong>.
+b. Install <strong>hySpc.skeleton</strong>’s dependencies.
+c. Create <strong>hySpc.skeleton</strong>’s documentation.
+d. Install package <strong>hySpc.skeleton</strong>.</li>
+</ol>
+<div class="sourceCode" id="cb3"><pre class="downlit">
+<span class="co"># Do not abort installation even if some packages are not available</span>
+<span class="fu"><a href="https://rdrr.io/r/base/Sys.setenv.html">Sys.setenv</a></span>(R_REMOTES_NO_ERRORS_FROM_WARNINGS = <span class="st">"true"</span>)
+
+<span class="co"># Install packages remotes and devtools</span>
+<span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span>(<span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="st">"remotes"</span>, <span class="st">"devtools"</span>))
+
+<span class="co"># Install hyperSpec's dependencies</span>
+<span class="kw">remotes</span>::<span class="fu"><a href="https://remotes.r-lib.org/reference/install_deps.html">install_deps</a></span>(dependencies = <span class="fl">TRUE</span>)
+
+<span class="co"># Create hyperSpec's documentation</span>
+<span class="kw">devtools</span>::<span class="fu"><a href="https://devtools.r-lib.org//reference/document.html">document</a></span>()
+
+<span class="co"># Install package hyperSpec and its dependencies</span>
+<span class="kw">devtools</span>::<span class="fu"><a href="https://devtools.r-lib.org//reference/install.html">install</a></span>(build_vignettes = <span class="fl">TRUE</span>)
+</pre></div>
+<p><strong>NOTE 1:</strong> Usually, “Windows” users need to download, install and properly configure <strong>Rtools</strong> (see <a href="https://cran.r-project.org/bin/windows/Rtools/">these instructions</a>) to make the code above work.</p>
+</div>
+</div>
+</div>
+
   </div>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
