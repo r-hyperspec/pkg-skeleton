@@ -13,8 +13,8 @@ License: MIT + file LICENSE
 Encoding: UTF-8
 LazyLoad: yes
 LazyData: yes
-Remotes:
-    r-hyperspec/hySpc.testthat
+Additional_repositories: 
+    https://r-hyperspec.github.io/pkg-repo/
 Depends:
     hyperSpec
 Imports: 
