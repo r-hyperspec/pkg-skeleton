@@ -4,7 +4,7 @@
 
 Repository **`hySpc.skeleton`** is a package template ("skeleton") for **`r-hyperspec`** family packages.
 
-When creating a new package (repository): 
+When creating a new package (repository):
 
 - [ ] replace words `SKELETON` and `hySpc.skeleton` with the new package name in:
   - [ ] `DESCRIPTION`
@@ -30,8 +30,19 @@ When creating a new package (repository):
   - [ ] update installation instructions (e.g., instead of `devtools::install(build_vignettes = TRUE)` the following code might be more appropriate if no vignettes are included `devtools::install()`)
   - [ ] update other information, if needed.
 - [ ] create issue labels:
-  - [ ] apply github labels (in `github-helpers/`), 
+  - [ ] apply github labels (in `github-helpers/`),
   - [ ] delete `github-helpers/`
+- [ ] Code & Vignettes:
+    - [ ] Be sure to review `CONTRIBUTING.md` which describes the standard operating procedures for the `r-hyperspec` project.
+    - [ ] Copy the code needed for this new package from the original `hyperSpec` files. Leave the old code untouched for now, as `hyperSpec` has to continue to operate.
+    - [ ] Update the code and write new code as needed.
+    - [ ] Update unit tests as needed.
+    - [ ] Update examples as needed.
+    - [ ] Build and check locally. Chase out the demons.
+    - [ ] Create a new vignette for this package, starting from the relevant vignette in original `hyperSpec`.
+    - [ ] Build and check locally again, fixing any remaining problems.
+    - [ ] Create a pull request as described in `CONTRIBUTING.md`.
+    - [ ] Rinse and repeat to reach perfection!
 - [ ] _update this list of TODOs_
 - [ ] Delete this TODO section.
 
@@ -88,7 +99,7 @@ install.packages("hySpc.skeleton")
 
 You can install the development version of the package from [GitHub](https://github.com/r-hyperspec/hySpc.skeleton):
 
-```r 
+```r
 if (!require(remotes)) {install.packages("remotes")}
 remotes::install_github("r-hyperspec/hySpc.skeleton")
 ```
@@ -96,7 +107,7 @@ remotes::install_github("r-hyperspec/hySpc.skeleton")
 **NOTE 1:**
 Usually, "Windows" users need to download, install and properly configure **Rtools** (see [these instructions](https://cran.r-project.org/bin/windows/Rtools/)) to make the code above work.
 
-**NOTE 2:** 
+**NOTE 2:**
 This method will **not** install package's documentation (help pages and vignettes) into your computer.
 So you can either use the [online documentation](https://r-hyperspec.github.io/) or build the package from source (see the next section).
 
@@ -138,4 +149,3 @@ devtools::install(build_vignettes = TRUE)
 
 **NOTE 1:**
 Usually, "Windows" users need to download, install and properly configure **Rtools** (see [these instructions](https://cran.r-project.org/bin/windows/Rtools/)) to make the code above work.
-
