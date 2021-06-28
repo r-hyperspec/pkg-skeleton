@@ -4,7 +4,7 @@ The following is a set of guidelines for contributing to the `R` package `SKELET
 
 ## Code Licensing
 
-By contributing, you understand and agree that your work becomes the part of the `SKELETON` project and will be licensed under the [GNU GPL v3](https://github.com/r-hyperspec/hySpc.skeleton/blob/master/LICENSE).
+`hyperSpec` and its associated repos were originally licensed under GPL-3 but as of June 2020 we are migrating to the MIT license. All future contributions will be MIT licensed. By contributing, you understand and agree that your work becomes the part of the `SKELETON` project and will be licensed under the [MIT license](https://github.com/r-hyperspec/hySpc.skeleton/blob/master/LICENSE).
 
 ## Reporting Bugs and Submitting Suggestions
 
@@ -90,8 +90,8 @@ The merged support branches [should be deleted - they're clutter](https://ardali
 
 ### Git Commits
 
-Commit often, try to make small atomic commits. 
-An atomic commit addresses only a small separate fix or change and is more or less self-consistent. 
+Commit often, try to make small atomic commits.
+An atomic commit addresses only a small separate fix or change and is more or less self-consistent.
 Every commit should be related to one feature only, but the commit should group strongly related changes together (e.g. when refactoring to rename a function, all files that are affected by this should be in the same commit).
 
 ### Commit Messages
@@ -100,7 +100,7 @@ Every commit should be related to one feature only, but the commit should group 
 * Use the imperative mood ("Move cursor to..." not "Moves cursor to...")
 * Limit the first line to 72 characters or less
 * Reference issues and pull requests liberally after the first line
-* Give a high-level description of the what and *why* of the changes 
+* Give a high-level description of the what and *why* of the changes
   (similar to good code comments) already in the first line
 * Use the most specialized verb that describes the situation
 
