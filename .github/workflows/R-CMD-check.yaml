@@ -2,12 +2,14 @@ on:
   push:
     branches:
       - release
+      - main
       - master
       - develop
 
   pull_request:
     branches:
       - release
+      - main
       - master
       - develop
 
@@ -115,3 +117,6 @@ jobs:
         if: ${{ runner.os == 'Windows' && startsWith(steps.install-r.outputs.installed-r-version, '3.6' ) }}
         shell: bash
         run: echo "C:/Program Files/Git/usr/bin" >> $GITHUB_PATH
+
+
+
