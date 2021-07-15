@@ -1,7 +1,12 @@
 
 # =========================================================================
-#     Use this bash script to copy labels from one repo to the other 
+#   Use this bash script to copy labels from one GitHub repo to another 
 # =========================================================================
+
+# NOTE: this script is simpler but NOT useful when you need to delete 
+#       all the old labels and non-default labels are present in the 
+#       destination repo.
+
 
 # URL to websites on methods that can be used co copy/delete labels
 # 
