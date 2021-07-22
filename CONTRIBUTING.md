@@ -4,7 +4,10 @@ The following is a set of guidelines for contributing to the `R` package `SKELET
 
 ## Code Licensing
 
-`hyperSpec` and its associated repos were originally licensed under GPL-3 but as of June 2020 we are migrating to the MIT license. All future contributions will be MIT licensed. By contributing, you understand and agree that your work becomes the part of the `SKELETON` project and will be licensed under the [MIT license](https://github.com/r-hyperspec/hySpc.skeleton/blob/master/LICENSE).
+Package **`hyperSpec`** and some of its [associated repos](https://github.com/r-hyperspec) (in the following text **`r-hyperspec` project**) were originally licensed under GPL-3.
+But as of June 2020, we are migrating to the MIT license.
+All future contributions will be MIT licensed.
+By contributing, you understand and agree that your work becomes the part of the [**`r-hyperspec` project**](https://github.com/r-hyperspec) and will be licensed under the [MIT license](https://github.com/r-hyperspec/hySpc.skeleton/blob/master/LICENSE).
 
 ## Reporting Bugs and Submitting Suggestions
 
