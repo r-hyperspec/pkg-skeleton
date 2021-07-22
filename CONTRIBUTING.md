@@ -36,7 +36,7 @@ The following is a set of guidelines for contributing to the `R` package `SKELET
 * In section headings main words should be capitalized.
 * Use the British English variant and corresponding spell checker.
 * Function names should be written between backticks with the parentheses and followed by a signal to use syntax formatting (not simply for example `texttt` or `code` if one was using pure LaTeX), for example `fun()`{.r}.  The CSS file controls the exact appearance.
-* When parts of the `SKELETON` objects are mentioned, use the syntax formatting, for instance `@data`{.r}.
+* When parts of the `hyperSpec` objects are mentioned, use the syntax formatting, for instance `@data`{.r}.
 * When parts of a structure such as a column or list element, use the syntax highlighting, e.g. `$something`{.r}.
 * Figures should have captions.
 * Every figure should be mentioned in text via reference.  This will give automatic numbering.
