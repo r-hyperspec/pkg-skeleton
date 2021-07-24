@@ -43,6 +43,8 @@ When creating a new package (repository):
     - [ ] Build and check locally again, fixing any remaining problems.
     - [ ] Create a pull request as described in `CONTRIBUTING.md`.
     - [ ] Rinse and repeat to reach perfection!
+- [ ] Workflows:
+  - [ ] Update the branches in `.github/workflows/drat--insert-package.yaml`.  Triggering branches are set to NONE in `pkg-skeleton` because we don't want `pkg-skeleton` to be deployed to the repo.
 - [ ] _update this list of TODOs_
 - [ ] Delete this TODO section.
 
