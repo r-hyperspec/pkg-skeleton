@@ -39,7 +39,7 @@ When creating a new package (repository):
     - [ ] Update unit tests as needed.
     - [ ] Update examples as needed.
     - [ ] Build and check locally. Chase out the demons.
-    - [ ] Create a new vignette for this package, starting from the relevant vignette in original `hyperSpec`.
+    - [ ] Create a new vignette for this package, starting from the relevant vignette in original `hyperSpec`.  The support files are already present.  If you don't want a vignette, delete the entire vignette folder.
     - [ ] Build and check locally again, fixing any remaining problems.
     - [ ] Create a pull request as described in `CONTRIBUTING.md`.
     - [ ] Rinse and repeat to reach perfection!
