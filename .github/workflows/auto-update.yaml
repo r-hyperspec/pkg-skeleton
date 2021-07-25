@@ -56,7 +56,7 @@ jobs:
         if: success()
         run: |
           for f in $FILES;
-            cp $f tmp-repo-dir/$f;
+            cp $f tmp-repo-dir/;
           done
 
       # - name: Commit and Push
