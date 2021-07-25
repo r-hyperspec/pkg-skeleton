@@ -1,6 +1,7 @@
-
+# Original file resides in r-hyperspec/pkg-skelton. Do not edit in any other repo.
+# Edit at r-hyperspec/pkg-skelton, then push there and this file will be deployed.
 # =========================================================================
-#   Use this bash script to copy labels from one GitHub repo to another 
+#   Use this bash script to copy labels from one GitHub repo to another
 # =========================================================================
 
 # This bash script:

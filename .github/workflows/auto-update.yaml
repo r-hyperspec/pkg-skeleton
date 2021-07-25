@@ -25,7 +25,7 @@ jobs:
     env:
       REPO: ${{ github.event.repository.name }}
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
-      FILES: .Rbuildignore .gitignore codecov.yml .github/workflows/R-CMD-check.yaml .github/workflows/drat--insert-package.yaml .github/workflows/test-coverage.yaml
+      FILES: .Rbuildignore .gitignore codecov.yml .github/workflows/R-CMD-check.yaml .github/workflows/drat--insert-package.yaml .github/workflows/test-coverage.yaml github-helpers/0--README.txt github-helpers/1--main--copy-github-labels-via-file.sh github-helpers/2--alternative--copy-labels-from-repo-to-repo.sh
       VIG_FILES:
     strategy:
       matrix:
