@@ -2,15 +2,11 @@
 # Do not edit in any other repo.
 # Edit at r-hyperspec/pkg-skelton, then push there and
 # this file will be deployed.
-^.*\.Rproj$
-^\.Rproj\.user$
-^\.travis\.yml$
-^codecov\.yml$
-^appveyor\.yml$
-^\.github$
-^docs
-^_pkgdown\.yml$
-^docs$
-^pkgdown$
-^CONTRIBUTING\.md$
-^github-helpers$
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+man/*.Rd
+docs/
+NAMESPACE
+docs
