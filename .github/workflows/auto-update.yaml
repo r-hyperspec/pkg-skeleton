@@ -48,19 +48,19 @@ jobs:
       - name: Clone Packages
         if: success()
         run: |
-          echo Cloning ${{ matrix.pkgs }}
+          # echo Cloning ${{ matrix.pkgs }}
           rm -rf tmp-repo-dir
           git clone 'https://github.com/${{ matrix.pkgs }}.git' tmp-repo-dir
           cd tmp-repo-dir
           git checkout develop
-          echo Successfully cloned ${{ matrix.pkgs }}
+          # echo Successfully cloned ${{ matrix.pkgs }}
 
       - name: Copy Most Files
         if: success()
         run: |
           for f in $FILES
           do
-            cp $f tmp-repo-dir/
+            rsync -R $f tmp-repo-dir/
           done
 
       - name: Conditionally Copy Vignette Files
@@ -69,7 +69,7 @@ jobs:
           if [ -d vignettes]; then
             for f in $VIG_FILES
             do
-              cp $f tmp-repo-dir/
+              rsync -R $f tmp-repo-dir/
             done
           fi
 
