@@ -25,9 +25,9 @@ jobs:
     env:
       REPO: ${{ github.event.repository.name }}
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+      FILES: .Rbuildignore .gitignore
     strategy:
       matrix:
-        upfiles: [.Rbuildignore, .gitignore]
         pkgs: [r-hyperspec/tmp-tst-1, r-hyperspec/tmp-tst-2]
 
     steps:
@@ -52,11 +52,13 @@ jobs:
           git checkout develop
           echo Successfully cloned ${{ matrix.pkgs }}
 
-      # - name: Copy Files
-      #   if: success()
-      #   run: |
-      #     cp ${{ matrix.upfiles }} tmp-repo-dir/${{ matrix.upfiles }}
-      #
+      - name: Copy Files
+        if: success()
+        run: |
+          for f in $FILES;
+            cp $f tmp-repo-dir/$f;
+          done
+
       # - name: Commit and Push
       #   if: success()
       #   run: |
