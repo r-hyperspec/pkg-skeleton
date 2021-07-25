@@ -57,17 +57,16 @@ jobs:
       - name: Copy Files
         if: success()
         run: |
-          ls -la
           for f in $FILES
           do
             cp $f tmp-repo-dir/
           done
 
-      # - name: Commit and Push
-      #   if: success()
-      #   run: |
-      #     cd tmp-repo-dir
-      #     git status
-      #     git add .
-      #     git commit -m 'Automated file update from ${REPO}'
-      #     git push origin develop
+      - name: Commit and Push
+        if: success()
+        run: |
+          cd tmp-repo-dir
+          git status
+          git add .
+          git commit -m 'Automated file update from ${REPO}'
+          git push origin develop
