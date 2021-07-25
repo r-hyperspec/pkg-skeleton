@@ -55,6 +55,7 @@ jobs:
       - name: Copy Files
         if: success()
         run: |
+          ls -la
           for f in $FILES
           do
             cp $f tmp-repo-dir/
