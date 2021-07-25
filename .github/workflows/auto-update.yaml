@@ -55,7 +55,7 @@ jobs:
       - name: Copy Files
         if: success()
         run: |
-          cd ~
+          cd $GITHUB_WORKSPACE
           ls -la
           for f in $FILES
           do
