@@ -31,6 +31,8 @@ jobs:
         pkgs: [r-hyperspec/tmp-tst-1, r-hyperspec/tmp-tst-2]
 
     steps:
+      - uses: actions/checkout@v2 # checks out current repo
+
       - name: Configure git
         # The following configure step is from
         # https://stackoverflow.com/a/60548651/633251
@@ -55,7 +57,6 @@ jobs:
       - name: Copy Files
         if: success()
         run: |
-          cd $GITHUB_WORKSPACE
           ls -la
           for f in $FILES
           do
