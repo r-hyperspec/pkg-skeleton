@@ -55,6 +55,7 @@ jobs:
       - name: Copy Files
         if: success()
         run: |
+          cd ~
           ls -la
           for f in $FILES
           do
