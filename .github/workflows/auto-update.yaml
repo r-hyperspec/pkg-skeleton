@@ -25,7 +25,8 @@ jobs:
     env:
       REPO: ${{ github.event.repository.name }}
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
-      FILES: .Rbuildignore .gitignore
+      FILES: .Rbuildignore .gitignore codecov.yaml
+      VIG_FILES:
     strategy:
       matrix:
         pkgs: [r-hyperspec/tmp-tst-1, r-hyperspec/tmp-tst-2]
@@ -68,5 +69,5 @@ jobs:
           cd tmp-repo-dir
           git status
           git add .
-          git commit -m 'Automated file update from ${REPO}'
+          git commit -m 'Automated file update from pkg-skeleton'
           git push origin develop
