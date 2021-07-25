@@ -1,3 +1,8 @@
+/* # Original file resides in r-hyperspec/pkg-skelton.
+# Do not edit in any other repo.
+# Edit at r-hyperspec/pkg-skelton, then push there and
+# this file will be deployed. */
+
 /*
 
 This file is copied from file "vignette.css" in R package "rmarkdown"
@@ -195,5 +200,3 @@ a {
     text-decoration: underline; }
   a[href^="https:"] {
     text-decoration: underline; }
-
-

@@ -26,7 +26,7 @@ jobs:
       REPO: ${{ github.event.repository.name }}
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
       FILES: .Rbuildignore .gitignore codecov.yml .github/workflows/R-CMD-check.yaml .github/workflows/drat--insert-package.yaml .github/workflows/test-coverage.yaml github-helpers/0--README.txt github-helpers/1--main--copy-github-labels-via-file.sh github-helpers/2--alternative--copy-labels-from-repo-to-repo.sh pkgdown/extra.css
-      VIG_FILES:
+      VIG_FILES: vignettes/.install_extras vignettes/elsevier-with-titles.csl vignettes/list-of-vignettes.md vignettes/style.css vignettes/vignettes-default-settings.R vignettes/vignette-functions.R vignettes/vignette.css
     strategy:
       matrix:
         pkgs: [r-hyperspec/tmp-tst-1, r-hyperspec/tmp-tst-2]
