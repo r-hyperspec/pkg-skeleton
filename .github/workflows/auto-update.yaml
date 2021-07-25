@@ -1,0 +1,67 @@
+#
+# Workflow to update selected repos in r-hyperspec/... with selected files
+# from r-hyperspec/pkg-skeleton when pkg-skeleton is updated by pushing.
+# pkg-skeleton branch auto-update will deploy to develop branch in other repos.
+#
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Each "- name:" task below starts from the same directory, which is:
+# /home/runner/work/${{ REPOSITORY_NAME }}/${{ REPOSITORY_NAME }}
+# e.g.:
+# /home/runner/work/hyperSpec/hyperSpec
+# Each task is run in its own shell starting from this directory.
+# This means you have to navigate to the desired directory for each task.
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+on:
+  push:
+    branches:
+      - auto-update
+
+name: update selected files in selected repos
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    env:
+      REPO: ${{ github.event.repository.name }}
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+    strategy:
+      matrix:
+        upfiles: [.Rbuildignore, .gitignore]
+        pkgs: [r-hyperspec/tmp-tst-1, r-hyperspec/tmp-tst-2]
+
+    steps:
+      - name: Configure git
+        # The following configure step is from
+        # https://stackoverflow.com/a/60548651/633251
+        env:
+          TOKEN: ${{ secrets.DEPLOY_TOKEN }}
+        run: |
+          git config --global url."https://${TOKEN}:x-oauth-basic@github.com/".insteadOf "https://github.com/"
+
+          git config --global user.email "${REPO}_Deploy_Bot@example.com"
+          git config --global user.name "${REPO} Deploy Bot"
+
+      - name: Clone Packages
+        if: success()
+        run: |
+          echo Cloning ${{ matrix.pkgs }}
+          rm -rf tmp-repo-dir
+          git clone 'https://github.com/${{ matrix.pkgs }}.git' tmp-repo-dir
+          cd tmp-repo-dir
+          git checkout develop
+          echo Successfully cloned ${{ matrix.pkgs }}
+
+      # - name: Copy Files
+      #   if: success()
+      #   run: |
+      #     cp ${{ matrix.upfiles }} tmp-repo-dir/${{ matrix.upfiles }}
+      #
+      # - name: Commit and Push
+      #   if: success()
+      #   run: |
+      #     cd tmp-repo-dir
+      #     git status
+      #     git add .
+      #     git commit -m 'Automated file update from ${REPO}'
+      #     git push origin develop
