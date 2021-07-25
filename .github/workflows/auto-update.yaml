@@ -25,7 +25,7 @@ jobs:
     env:
       REPO: ${{ github.event.repository.name }}
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
-      FILES: .Rbuildignore .gitignore codecov.yaml .github/workflows/R-CMD-check.yaml .github/workflows/drat--insert-package.yaml .github/workflows/test-coverage.yaml
+      FILES: .Rbuildignore .gitignore codecov.yml .github/workflows/R-CMD-check.yaml .github/workflows/drat--insert-package.yaml .github/workflows/test-coverage.yaml
       VIG_FILES:
     strategy:
       matrix:
