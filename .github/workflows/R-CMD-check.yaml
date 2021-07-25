@@ -1,4 +1,5 @@
-on:
+# Original file resides in r-hyperspec/pkg-skelton. Do not edit in any other repo.
+# Edit at r-hyperspec/pkg-skelton, then push there and this file will be deployed.on:
   push:
     branches:
       - release
@@ -117,6 +118,3 @@ jobs:
         if: ${{ runner.os == 'Windows' && startsWith(steps.install-r.outputs.installed-r-version, '3.6' ) }}
         shell: bash
         run: echo "C:/Program Files/Git/usr/bin" >> $GITHUB_PATH
-
-
-
