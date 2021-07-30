@@ -32,5 +32,4 @@ Rplots.pdf
 
 ### package-specific ###
 ^inst/extdata/chondro\.gz$
-^inst/extdata/winspec.pdf$
 tests/testthat/fileio
