@@ -1,12 +1,19 @@
+# IDE & editor files
 ^.*\.Rproj$
 ^\.Rproj\.user$
-^\.travis\.yml$
-^codecov\.yml$
-^appveyor\.yml$
-^\.github$
-^docs
-^_pkgdown\.yml$
-^docs$
-^pkgdown$
-^CONTRIBUTING\.md$
+^_tmp$
+
+# Other/Broad
+^.*\.html
+^.*\.pdf
+
+# Directories
 ^github-helpers$
+^\.github$
+^pkgdown$
+
+# Helper files
+^CONTRIBUTING\.md$
+^README\.md$
+^.codecov\.yml$
+^_pkgdown\.yml$
