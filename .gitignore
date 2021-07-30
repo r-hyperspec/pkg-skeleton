@@ -30,9 +30,9 @@ vignettes/resources/*.bib
 
 # Documentation
 NAMESPACE
+man/*.Rd
 
 # Other/Broad
 *.html
 *.pdf
-*.Rd
 _tmp/
