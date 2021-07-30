@@ -35,8 +35,8 @@ vignettes/fileio
 vignettes/resources/*.bib
 
 # Documentation
-NAMESPACE
 man/*.Rd
+NAMESPACE
 NEWS.html
 README.html
 
