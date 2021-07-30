@@ -2,15 +2,35 @@
 # Do not edit in any other repo.
 # Edit at r-hyperspec/pkg-skelton, then push there and
 # this file will be deployed.
+
+# RStudio files
 ^.*\.Rproj$
 ^\.Rproj\.user$
-^\.travis\.yml$
-^codecov\.yml$
-^appveyor\.yml$
+
+# Github related
 ^\.github$
-^docs
-^_pkgdown\.yml$
-^docs$
-^pkgdown$
-^CONTRIBUTING\.md$
 ^github-helpers$
+
+# Codecov files
+^codecov\.yml$
+
+# pkgdown files
+^_pkgdown\.yml$
+^pkgdown$
+ ^docs$
+
+# Top-level files
+^NEWS\.html$
+^CONTRIBUTING\.md$
+
+ # Other directories
+^data-raw$
+^_tmp
+
+# Unwanted files
+Rplots.pdf
+
+### package-specific ###
+^inst/extdata/chondro\.gz$
+^inst/extdata/winspec.pdf$
+tests/testthat/fileio
