@@ -37,6 +37,8 @@ vignettes/resources/*.bib
 # Documentation
 NAMESPACE
 man/*.Rd
+NEWS.html
+README.html
 
 # Other/Broad
 *.html
