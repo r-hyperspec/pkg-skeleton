@@ -34,5 +34,4 @@ man/*.Rd
 
 # Other/Broad
 *.html
-*.pdf
 _tmp/
