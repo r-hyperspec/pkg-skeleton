@@ -15,7 +15,7 @@
 *.Rproj
 
 # Local pkgdown files
-docs
+docs/
 
 # Unit tests
 tests/testthat/Rplots.pdf
@@ -23,9 +23,10 @@ tests/testthat/fileio
 
 # Vignettes
 vignettes/*-pkg.bib
-vignettes/resources/*.bib
-vignettes/fileio
+vignettes/*.html
 vignettes/*.R
+vignettes/fileio
+vignettes/resources/*.bib
 
 # Documentation
 NAMESPACE
@@ -34,3 +35,4 @@ NAMESPACE
 *.html
 *.pdf
 *.Rd
+_tmp/
