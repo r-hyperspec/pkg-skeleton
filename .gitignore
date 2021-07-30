@@ -2,11 +2,44 @@
 # Do not edit in any other repo.
 # Edit at r-hyperspec/pkg-skelton, then push there and
 # this file will be deployed.
-.Rproj.user
+
+# History files
 .Rhistory
+.Rapp.history
+
+# Session Data files
 .RData
 .Ruserdata
-man/*.Rd
+
+# Example code in package build process
+*-Ex.R
+
+# Mac directory files
+*.DS_Store
+
+# RStudio files
+.Rproj.user
+*.Rproj
+
+# Local pkgdown files
 docs/
+
+# Unit tests
+tests/testthat/fileio
+tests/testthat/Rplots.pdf
+
+# Vignettes
+vignettes/*-pkg.bib
+vignettes/*.html
+vignettes/*.R
+vignettes/fileio
+vignettes/resources/*.bib
+
+# Documentation
+man/*.Rd
 NAMESPACE
-docs
+NEWS.html
+README.html
+
+# Other
+_tmp/
