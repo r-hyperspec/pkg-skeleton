@@ -66,6 +66,7 @@ jobs:
       - name: Conditionally Copy Vignette Files
         if: success()
         run: |
+          cd tmp-repo-dir
           if [ -d vignettes]; then
             for f in $VIG_FILES
             do
