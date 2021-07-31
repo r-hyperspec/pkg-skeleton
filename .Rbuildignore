@@ -33,3 +33,6 @@ Rplots.pdf
 ### package-specific ###
 ^inst/extdata/chondro\.gz$
 tests/testthat/fileio
+
+
+# TEST ENTRY to check workflow

@@ -29,7 +29,7 @@ jobs:
       VIG_FILES: vignettes/.install_extras vignettes/elsevier-with-titles.csl vignettes/list-of-vignettes.md vignettes/style.css vignettes/vignettes-default-settings.R vignettes/vignette-functions.R vignettes/vignette.css
     strategy:
       matrix:
-        pkgs: [r-hyperspec/tmp-tst-3, r-hyperspec/tmp-tst-4]
+        pkgs: [r-hyperspec/tmp-tst-1]
 
     steps:
       - uses: actions/checkout@v2 # checks out current repo
@@ -60,7 +60,7 @@ jobs:
         run: |
           for f in $FILES
           do
-            rsync -R $f tmp-repo-dir/
+            rsync -Rrtpgo $f tmp-repo-dir/
           done
 
       - name: Conditionally Copy Vignette Files
@@ -69,7 +69,7 @@ jobs:
           if [ -d vignettes]; then
             for f in $VIG_FILES
             do
-              rsync -R $f tmp-repo-dir/
+              rsync -Rrtpgo $f tmp-repo-dir/
             done
           fi
 
