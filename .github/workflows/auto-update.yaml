@@ -67,7 +67,7 @@ jobs:
         if: success()
         run: |
           cd tmp-repo-dir
-          if [ -d "vignettes"]; then
+          if [ -d "vignettes" ]; then
             for f in $VIG_FILES
             do
               rsync -Rrtpgo $f tmp-repo-dir/
