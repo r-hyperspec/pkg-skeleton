@@ -82,4 +82,6 @@ jobs:
             git add .
             git commit -m 'Automated file update from pkg-skeleton'
             git push origin develop
+          else
+            echo "Nothing to commit";
           fi
