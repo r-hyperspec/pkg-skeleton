@@ -67,6 +67,8 @@ jobs:
         if: success()
         run: |
           cd tmp-repo-dir
+          pwd
+          ls -l
           if [ -d vignettes]; then
             for f in $VIG_FILES
             do
