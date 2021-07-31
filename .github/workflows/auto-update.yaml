@@ -60,17 +60,16 @@ jobs:
         run: |
           for f in $FILES
           do
-            rsync -Rrtpgo $f tmp-repo-dir/
+            rsync -Rrtpgov $f tmp-repo-dir/
           done
 
       - name: Conditionally Copy Vignette Files
         if: success()
         run: |
-          cd tmp-repo-dir
-          if [ -d "vignettes" ]; then
+          if [ -d "tmp-repo-dir/vignettes" ]; then
             for f in $VIG_FILES
             do
-              rsync -Rrtpgo $f tmp-repo-dir/
+              rsync -Rrtpgov $f tmp-repo-dir/
             done
           fi
 
