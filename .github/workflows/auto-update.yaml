@@ -77,7 +77,9 @@ jobs:
         if: success()
         run: |
           cd tmp-repo-dir
-          git status
-          git add .
-          git commit -m 'Automated file update from pkg-skeleton'
-          git push origin develop
+          if [ -n "$(git status --porcelain)" ]; then
+            git status
+            git add .
+            git commit -m 'Automated file update from pkg-skeleton'
+            git push origin develop
+          fi
