@@ -55,7 +55,7 @@ jobs:
           git checkout develop
           # echo Successfully cloned ${{ matrix.pkgs }}
 
-      - name: Copy Most Files
+      - name: Copy Non-Vig Files
         if: success()
         run: |
           for f in $FILES
@@ -67,9 +67,7 @@ jobs:
         if: success()
         run: |
           cd tmp-repo-dir
-          pwd
-          ls -l
-          if [ -d vignettes]; then
+          if [ -d "vignettes"]; then
             for f in $VIG_FILES
             do
               rsync -Rrtpgo $f tmp-repo-dir/
