@@ -29,7 +29,7 @@ jobs:
       VIG_FILES: vignettes/.install_extras vignettes/elsevier-with-titles.csl vignettes/list-of-vignettes.md vignettes/style.css vignettes/vignette-default-settings.R vignettes/vignette-functions.R vignettes/vignette.css
     strategy:
       matrix:
-        pkgs: [r-hyperspec/tmp-tst-2, r-hyperspec/tmp-tst-1]
+        pkgs: [r-hyperspec/hySpc.read.jdx]
 
     steps:
       - uses: actions/checkout@v2 # checks out current repo
@@ -52,7 +52,7 @@ jobs:
           rm -rf tmp-repo-dir
           git clone 'https://github.com/${{ matrix.pkgs }}.git' tmp-repo-dir
           cd tmp-repo-dir
-          git checkout develop
+          git checkout auto-update-test
           # echo Successfully cloned ${{ matrix.pkgs }}
 
       - name: Copy Non-Vig Files
@@ -81,7 +81,7 @@ jobs:
             git status
             git add .
             git commit -m 'Automated file update from pkg-skeleton'
-            git push origin develop
+            git push origin auto-update-test
           else
             echo "Nothing to commit";
           fi
