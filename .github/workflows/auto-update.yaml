@@ -29,7 +29,7 @@ jobs:
       VIG_FILES: vignettes/.install_extras vignettes/elsevier-with-titles.csl vignettes/list-of-vignettes.md vignettes/style.css vignettes/vignette-default-settings.R vignettes/vignette-functions.R vignettes/vignette.css
     strategy:
       matrix:
-        pkgs: [r-hyperspec/hySpc.read.jdx]
+        pkgs: [r-hyperspec/hySpc.read.spe]
 
     steps:
       - uses: actions/checkout@v2 # checks out current repo
