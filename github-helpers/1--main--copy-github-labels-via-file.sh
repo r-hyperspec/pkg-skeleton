@@ -1,11 +1,11 @@
 
 # =========================================================================
-#   Use this bash script to copy labels from one GitHub repo to another 
+#   Use this bash script to copy labels from one GitHub repo to another
 # =========================================================================
 
 # This bash script:
 #   - reads labels from a GitHub repository and writes them to a file;
-#   - copies the labels from a file to a new repository.
+#   - copies the labels from the file to a new repository.
 
 # NOTE: this script is useful when you need to delete old labels.
 
