@@ -98,8 +98,8 @@ The documentation of the other **`r-hyperspec`** family packages can be found at
 
 Issues, bug reports and feature requests should go to an appopriate package's repository:
 
-- if related to this package, use this [link](https://github.com/r-hyperspec/hySpc.skeleton/issues);
-- if related to `hyperSpec` package, use this [link](https://github.com/r-hyperspec/hyperSpec/issues).
+- if related to this package, use [this link](https://github.com/r-hyperspec/hySpc.skeleton/issues);
+- if related to `hyperSpec` package, use [this link](https://github.com/r-hyperspec/hyperSpec/issues).
 <!-- ---------------------------------------------------------------------- -->
 
 
