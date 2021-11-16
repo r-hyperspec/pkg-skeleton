@@ -65,9 +65,20 @@ When creating a new package (repository):
 
 
 
+<!-- ---------------------------------------------------------------------- -->
 # R Package **hySpc.skeleton**
+<!-- ---------------------------------------------------------------------- -->
+<br>
+<center>
+<font color="red" size=4>
+<b>This package is still under construction.</b>  
+So this website is not fully updated yet.  
+</font>
+</center>
+<br>
+<!-- ---------------------------------------------------------------------- -->
 
-[**R**](https://www.r-project.org/) package **hySpc.skeleton** is a member of the [**`r-hyperspec`**](https://r-hyperspec.github.io/) packages family, which ...
+[**R**](https://www.r-project.org/) package **hySpc.skeleton** is a member of the [**`r-hyperspec`**](https://r-hyperspec.github.io/) packages family, which ...  
 **WRITE THE PURPOSE OF THIS PACKAGE**  
 
 <!-- ---------------------------------------------------------------------- -->
@@ -83,18 +94,44 @@ The documentation of the other **`r-hyperspec`** family packages can be found at
 
 <!-- ---------------------------------------------------------------------- -->
 
+## Issues, Bug Reports and Feature Requests
+
+Issues, bug reports and feature requests should go to an appopriate package's repository:
+
+- if related to this package, use this [link](https://github.com/r-hyperspec/hySpc.skeleton/issues);
+- if related to `hyperSpec` package, use this [link](https://github.com/r-hyperspec/hyperSpec/issues).
+<!-- ---------------------------------------------------------------------- -->
+
+
 ## Installation
 
+<!--
 ### Install from CRAN
+
+> **NOTE:** this package is not relesed yet!
 
 You can install the released version of **hySpc.skeleton** from [CRAN](https://cran.r-project.org/package=hySpc.skeleton) with:
 
 ```r
 install.packages("hySpc.skeleton")
 ```
+-->
+
+
+### Install from CRAN-like Repository
+
+The **recommended** way to install the in-development version:
+
+```r
+repos <- c("https://r-hyperspec.github.io/pkg-repo/", getOption("repos"))
+install.packages("hySpc.skeleton", repos = repos)
+```
 
 
 ### Install from GitHub
+
+<details>
+<summary>Install from GitHub (details)</summary>
 
 You can install the development version of the package from [GitHub](https://github.com/r-hyperspec/hySpc.skeleton):
 
@@ -109,6 +146,9 @@ Usually, "Windows" users need to download, install and properly configure **Rtoo
 **NOTE 2:**
 This method will **not** install package's documentation (help pages and vignettes) into your computer.
 So you can either use the [online documentation](https://r-hyperspec.github.io/) or build the package from source (see the next section).
+
+</details>
+
 
 
 ### Install from Source
@@ -148,3 +188,5 @@ devtools::install(build_vignettes = TRUE)
 
 **NOTE 1:**
 Usually, "Windows" users need to download, install and properly configure **Rtools** (see [these instructions](https://cran.r-project.org/bin/windows/Rtools/)) to make the code above work.
+
+</details>
