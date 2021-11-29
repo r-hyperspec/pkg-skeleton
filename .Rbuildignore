@@ -6,11 +6,6 @@
 # IDE & editor files
 ^.*\.Rproj$
 ^\.Rproj\.user$
-^_tmp$
-
-# Other/Broad
-^.*\.html
-^.*\.pdf
 
 # Directories
 ^github-helpers$
@@ -21,13 +16,24 @@
 ^_tmp$
 
 # Helper files
-Makefile
+^codecov\.yml$
+^NEWS\.html$
 ^CONTRIBUTING\.md$
 ^README\.md$
 ^README\.Rmd$
 ^codecov\.yml$
 ^_pkgdown\.yml$
+Makefile
 
+# Unwanted files
+Rplots.pdf
 
-# Package specific
+# Other/Broad
+^.*\.html
+^.*\.pdf
+
+### Package-specific ###
 ^inst/extdata/chondro\.gz$
+tests/testthat/fileio
+
+
