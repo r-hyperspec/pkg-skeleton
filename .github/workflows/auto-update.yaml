@@ -15,7 +15,7 @@
 on:
   push:
     branches:
-      - auto-update
+      - auto-update-2
 
 name: Update files
 # name: Update selected files in selected repos
