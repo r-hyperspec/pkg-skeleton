@@ -56,20 +56,31 @@ When creating a new package (repository):
 <!-- ---------------------------------------------------------------------- -->
 
 <!-- badges: start -->
+[![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
 [![CRAN status](https://www.r-pkg.org/badges/version-last-release/hySpc.skeleton)](https://cran.r-project.org/package=hySpc.skeleton)
 [![R-CMD-check](https://github.com/r-hyperspec/hySpc.skeleton/workflows/R-CMD-check/badge.svg)](https://github.com/r-hyperspec/hySpc.skeleton/actions)
 ![Website (pkgdown)](https://github.com/r-hyperspec/hySpc.skeleton/workflows/Website%20(pkgdown)/badge.svg)
 [![Codecov](https://codecov.io/gh/r-hyperspec/hySpc.skeleton/branch/develop/graph/badge.svg)](https://codecov.io/gh/r-hyperspec/hySpc.skeleton?branch=develop)
-[![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
 <!--[![metacran downloads](https://cranlogs.r-pkg.org/badges/grand-total/hySpc.skeleton)](https://cran.r-project.org/package=hySpc.skeleton)-->
 <!--[![metacran downloads](https://cranlogs.r-pkg.org/badges/hySpc.skeleton)](https://cran.r-project.org/package=hySpc.skeleton)-->
 <!-- badges: end -->
 
 
 
+<!-- ---------------------------------------------------------------------- -->
 # R Package **hySpc.skeleton**
+<!-- ---------------------------------------------------------------------- -->
+<br>
+<center>
+<font color="red" size=4>
+<b>This package is still under construction.</b>  
+So this website is not fully updated yet.  
+</font>
+</center>
+<br>
+<!-- ---------------------------------------------------------------------- -->
 
-[**R**](https://www.r-project.org/) package **hySpc.skeleton** is a member of the [**`r-hyperspec`**](https://r-hyperspec.github.io/) packages family, which ...
+[**R**](https://www.r-project.org/) package **hySpc.skeleton** is a member of the [**`r-hyperspec`**](https://r-hyperspec.github.io/) packages family, which ...  
 **WRITE THE PURPOSE OF THIS PACKAGE**  
 
 <!-- ---------------------------------------------------------------------- -->
@@ -85,20 +96,45 @@ The documentation of the other **`r-hyperspec`** family packages can be found at
 
 <!-- ---------------------------------------------------------------------- -->
 
+## Issues, Bug Reports and Feature Requests
+
+Issues, bug reports and feature requests should go to an appopriate package's repository:
+
+- if related to this package, use [this link](https://github.com/r-hyperspec/hySpc.skeleton/issues);
+- if related to `hyperSpec` package, use [this link](https://github.com/r-hyperspec/hyperSpec/issues).
+<!-- ---------------------------------------------------------------------- -->
+
+
 ## Installation
 
+<!--
 ### Install from CRAN
+
+> **NOTE:** this package is not relesed yet!
 
 You can install the released version of **hySpc.skeleton** from [CRAN](https://cran.r-project.org/package=hySpc.skeleton) with:
 
 ```r
 install.packages("hySpc.skeleton")
 ```
+-->
 
+
+### Install from CRAN-like Repository
+
+The **recommended** way to install the in-development version:
+
+```r
+repos <- c("https://r-hyperspec.github.io/pkg-repo/", getOption("repos"))
+install.packages("hySpc.skeleton", repos = repos)
+```
 
 ### Install from GitHub
 
-You can install the development version of the package from [GitHub](https://github.com/r-hyperspec/hySpc.skeleton):
+<details>
+<summary>Install from GitHub (details)</summary>
+
+You can install the in-development version of the package from [GitHub](https://github.com/r-hyperspec/hySpc.skeleton) too:
 
 ```r
 if (!require(remotes)) {install.packages("remotes")}
@@ -112,8 +148,14 @@ Usually, "Windows" users need to download, install and properly configure **Rtoo
 This method will **not** install package's documentation (help pages and vignettes) into your computer.
 So you can either use the [online documentation](https://r-hyperspec.github.io/) or build the package from source (see the next section).
 
+</details>
+
+
 
 ### Install from Source
+
+<details>
+<summary>Install from Source (details)</summary>
 
 1. From the **hySpc.skeleton**'s GitHub [repository](https://github.com/r-hyperspec/hySpc.skeleton):
     - If you use Git, `git clone` the branch of interest.
@@ -150,3 +192,10 @@ devtools::install(build_vignettes = TRUE)
 
 **NOTE 1:**
 Usually, "Windows" users need to download, install and properly configure **Rtools** (see [these instructions](https://cran.r-project.org/bin/windows/Rtools/)) to make the code above work.
+
+</details>
+
+
+## For Developers
+
+Developers can find information about automatic deployment from this repo to `pkg-repo` [here](https://github.com/r-hyperspec/pkg-repo) in `CONTRIBUTING.md`.

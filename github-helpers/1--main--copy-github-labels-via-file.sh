@@ -6,9 +6,10 @@
 
 # This bash script:
 #   - reads labels from a GitHub repository and writes them to a file;
-#   - copies the labels from a file to a new repository.
+#   - copies the labels from the file to a new repository.
 
 # NOTE: this script is useful when you need to delete old labels.
+#       Works for non-private repos only.
 
 # Authors: Vilmantas Gegzna & Erick Oduniyi
 
@@ -21,6 +22,10 @@
 # You can access PAT (if it is saved locally) by using R code:
 #    gitcreds::gitcreds_set()
 
+# Get PAT from R, if it is saved there
+pat=$(Rscript -e 'gitcreds::gitcreds_get()$password')
+
+# Or paste your pat instead of ???
 pat=???
 
 # Source repo:

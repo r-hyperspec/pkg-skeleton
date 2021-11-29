@@ -28,11 +28,22 @@ By contributing, you understand and agree that your work becomes the part of the
     [Here are some regexps to help with search and replace of `\code{}` and `\link[]{}`.](https://gist.github.com/cbeleites/cc1c964bc5416ca285acf24f1d4e30ef)
 
 * Use package [styler](http://styler.r-lib.org/) with RStudio add-in to easily re-style your code to comply with the guidelines.
+* When appropriate, prefer this naming scheme for the internal functions – `.<generic>_<x><y><...>` with `<x>`, `<y>`, etc. the first, second and later parameter/operand:
+    - _ ... missing
+    - a ... array
+    - d ... data frame
+    - f ... formula
+    - h ... hyperSpec object
+    - m ... matrix
+    - n ... numeric (scalar, vector, or matrix)
+
+* Each new function should be accompanied with appropriate unit tests.
 * If a unit test needs to be disabled temporarily, please use `skip("reason for switching off")`.
   This way, we'll be reminded that the test is switched off whenever the unit tests are run.
 
 
 ## Vignette Style and Standards
+
 * No multi-line sentences (enter/return after each sentence, extra return starts a new paragraph).  This facilitates comparison via version control.
 * Package names in text are written in **bold**.
 * Package names in section headings are in **_bold italic_**.
@@ -49,6 +60,7 @@ By contributing, you understand and agree that your work becomes the part of the
 * The first code block should start with `rm(list = ls())` to ensure a clean, reproducible workspace.
 * NEED TO DISCUSS: formatting of code blocks. Could use `tidy = TRUE` as one option.
 * If you need to leave a note in a vignette, please use this [method](https://github.com/cbeleites/SKELETON/pull/147#issuecomment-646685392).
+* Figure sizes are largely standardized, via the hook defined in `vignette-default-settings.R`.  See the discussion there.
 
 
 ## Working With Git

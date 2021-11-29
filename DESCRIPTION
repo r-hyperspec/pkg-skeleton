@@ -1,30 +1,36 @@
 Package: SKELETON
+Encoding: UTF-8
 Type: Package
-Version: 0.0.0.9000
 Title: Package's Title
 Description: Short Description of the package.
+Version: 0.0.0.9000
+Date: 2021-11-01
 Authors@R: c(
-    person("Claudia",   "Beleites",  role = c("aut"), email = "Claudia.Beleites@chemometrix.gmbh"),
-    person("Erick",     "Oduniyi", role = c("aut","cre"), email = "eeoduniyi@gmail.com"),
-    person("Vilmantas", "Gegzna", role = c("aut")),
-    person("Bryan",     "Hanson", role = c("aut"))
+    person("Claudia",   "Beleites",  role = c("aut", "cre"), email = "Claudia.Beleites@chemometrix.gmbh"),
+    person("Vilmantas", "Gegzna",    role = "aut", comment = c(ORCID = "0000-0002-9500-5167")),
+    person("Bryan A.",  "Hanson",    role = "aut", comment = c(ORCID = "0000-0003-3536-8246"))
     )
 License: MIT + file LICENSE
-Encoding: UTF-8
 LazyLoad: yes
 LazyData: yes
 Additional_repositories: 
     https://r-hyperspec.github.io/pkg-repo/
 Depends:
     hyperSpec
-Imports: 
+Imports:
     hySpc.testthat
 Suggests:
     knitr,
     covr
 URL: 
-    https://r-hyperspec.github.io/hySpc.skeleton,
-    https://github.com/r-hyperspec/hySpc.skeleton
-BugReports: https://github.com/r-hyperspec/hySpc.skeleton/issues
+    https://r-hyperspec.github.io/SKELETON,
+    https://github.com/r-hyperspec/SKELETON
+BugReports: https://github.com/r-hyperspec/SKELETON/issues
 VignetteBuilder: knitr
-RoxygenNote: 7.1.1
+RoxygenNote: 7.1.2
+Roxygen: list(markdown = TRUE)
+Collate:
+    'demo_function.R'
+    'package.R'
+    'unittestdata.R'
+

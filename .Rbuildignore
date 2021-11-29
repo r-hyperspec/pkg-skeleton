@@ -1,41 +1,39 @@
 # Original file resides in r-hyperspec/pkg-skelton.
 # Do not edit in any other repo.
 # Edit at r-hyperspec/pkg-skelton, then push there and
-# this file will be deployed.
+# this file will be deployed to the other repos.
 
-# RStudio files
+# IDE & editor files
 ^.*\.Rproj$
 ^\.Rproj\.user$
 
-# Github related
+# Directories
+^pkgdown$
+^data-raw$
+^docs$
+^_tmp$
+
+# Helper files
 ^\.github$
 ^github-helpers$
-
-# Codecov files
 ^codecov\.yml$
-
-# pkgdown files
-^_pkgdown\.yml$
-^pkgdown$
- ^docs$
-
-# Top-level files
 ^NEWS\.html$
 ^CONTRIBUTING\.md$
-
- # Other directories
-^data-raw$
-^_tmp
+^README\.md$
+^README\.Rmd$
+^codecov\.yml$
+^_pkgdown\.yml$
+Makefile
 
 # Unwanted files
 Rplots.pdf
 
-### package-specific ###
+# Other/Broad
+^.*\.html
+^.*\.pdf
+
+### Package-specific ###
 ^inst/extdata/chondro\.gz$
 tests/testthat/fileio
 
 
-# TEST ENTRY to check workflow
-# Another TEST ENTRY to check workflow
-# TEST ENTRY #3
-# TEST ENTRY #4 #5 #6 #7 #1,000,000 it works!
