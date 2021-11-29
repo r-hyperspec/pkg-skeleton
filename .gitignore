@@ -13,6 +13,7 @@
 
 # Example code in package build process
 *-Ex.R
+
 # Mac directory files
 *.DS_Store
 
@@ -26,7 +27,8 @@ docs/
 
 # Unit tests
 tests/testthat/Rplots.pdf
-tests/testthat/fileio
+tests/testthat/test_*.R
+tests/testthat/test-*.R
 
 # Vignettes
 vignettes/*-pkg.bib
@@ -44,3 +46,6 @@ README.html
 # Other/Broad
 *.html
 _tmp/
+
+### Package-specific ###
+tests/testthat/fileio
