@@ -101,7 +101,7 @@ jobs:
             git status
             git add .
             git commit -m 'Automated file update from pkg-skeleton'
-            git push origin auto-update-test
+            git push origin develop
           else
             echo "Nothing to commit";
           fi
