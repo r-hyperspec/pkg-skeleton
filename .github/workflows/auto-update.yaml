@@ -1,4 +1,4 @@
-#
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Workflow to update selected repos in r-hyperspec/... with selected files
 # from r-hyperspec/pkg-skeleton when pkg-skeleton is updated by pushing.
 # pkg-skeleton branch auto-update will deploy to develop branch in other repos.
@@ -15,7 +15,7 @@
 on:
   push:
     branches:
-      - auto-update-2
+      - auto-update
 
 name: Update files
 # name: Update selected files in selected repos
