@@ -17,7 +17,9 @@ on:
     branches:
       - auto-update
 
-name: update selected files in selected repos
+name: Update files
+# name: Update selected files in selected repos
+
 
 jobs:
   update:
@@ -25,11 +27,28 @@ jobs:
     env:
       REPO: ${{ github.event.repository.name }}
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
-      FILES: .Rbuildignore .gitignore codecov.yml .github/workflows/R-CMD-check.yaml .github/workflows/drat--insert-package.yaml .github/workflows/test-coverage.yaml pkgdown/extra.css
-      VIG_FILES: vignettes/.install_extras vignettes/elsevier-with-titles.csl vignettes/list-of-vignettes.md vignettes/style.css vignettes/vignette-default-settings.R vignettes/vignette-functions.R vignettes/vignette.css
+      FILES: |
+        .github/workflows/drat--insert-package.yaml
+        .github/workflows/R-CMD-check.yaml
+        .github/workflows/test-coverage.yaml
+        .gitignore
+        .Rbuildignore
+        codecov.yml
+        pkgdown/extra.css
+        project.Rproj
+      VIG_FILES: |
+        vignettes/.install_extras
+        vignettes/elsevier-with-titles.csl
+        vignettes/list-of-vignettes.md
+        vignettes/style.css
+        vignettes/vignette-default-settings.R
+        vignettes/vignette-functions.R
+        vignettes/vignette.css
     strategy:
       matrix:
-        pkgs: [r-hyperspec/hySpc.read.spe]
+        pkgs:
+          - r-hyperspec/hySpc.read.spe
+          - r-hyperspec/hySpc.chondro
 
     steps:
       - uses: actions/checkout@v2 # checks out current repo
