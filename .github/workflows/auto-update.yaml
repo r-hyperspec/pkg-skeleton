@@ -31,10 +31,11 @@ jobs:
         .github/workflows/drat--insert-package.yaml
         .github/workflows/R-CMD-check.yaml
         .github/workflows/test-coverage.yaml
+        .github/workflows/pkgdown.yaml
+        pkgdown/extra.css
         .gitignore
         .Rbuildignore
         codecov.yml
-        pkgdown/extra.css
         project.Rproj
       VIG_FILES: |
         vignettes/.install_extras
