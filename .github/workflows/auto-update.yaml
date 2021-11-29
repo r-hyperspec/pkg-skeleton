@@ -72,7 +72,7 @@ jobs:
           rm -rf tmp-repo-dir
           git clone 'https://github.com/${{ matrix.pkgs }}.git' tmp-repo-dir
           cd tmp-repo-dir
-          git checkout auto-update-test
+          git checkout develop
           # echo Successfully cloned ${{ matrix.pkgs }}
 
       - name: Copy Non-Vig Files
