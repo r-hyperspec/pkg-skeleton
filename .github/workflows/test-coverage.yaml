@@ -62,7 +62,9 @@ jobs:
       - name: Roxygenize
         run: |
           # Vignettes are not needed for coverage tests
-          devtools::document(roclets = c('rd', 'collate', 'namespace'))
+          roclets <- roxygen2::load_options()$roclets
+          roclets <- roclets[!roclets %in% "vignette"]
+          devtools::document(roclets = roclets)
         shell: Rscript {0}
 
       - name: Test coverage
