@@ -94,7 +94,7 @@
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="https://github.com/r-hyperspec/hySpc.skeleton/">
+  <a href="https://github.com/r-hyperspec/SKELETON/">
     <span class="fab fa-github fa-lg"></span>
      
   </a>
@@ -149,6 +149,19 @@
 </ul>
 </li>
 <li><p>Use package <a href="http://styler.r-lib.org/">styler</a> with RStudio add-in to easily re-style your code to comply with the guidelines.</p></li>
+<li>
+<p>When appropriate, prefer this naming scheme for the internal functions – <code>.&lt;generic&gt;_&lt;x&gt;&lt;y&gt;&lt;...&gt;</code> with <code>&lt;x&gt;</code>, <code>&lt;y&gt;</code>, etc. the first, second and later parameter/operand:</p>
+<ul>
+<li>_ … missing</li>
+<li>a … array</li>
+<li>d … data frame</li>
+<li>f … formula</li>
+<li>h … hyperSpec object</li>
+<li>m … matrix</li>
+<li>n … numeric (scalar, vector, or matrix)</li>
+</ul>
+</li>
+<li><p>Each new function should be accompanied with appropriate unit tests.</p></li>
 <li><p>If a unit test needs to be disabled temporarily, please use <code>skip("reason for switching off")</code>. This way, we’ll be reminded that the test is switched off whenever the unit tests are run.</p></li>
 </ul>
 </div>
@@ -172,6 +185,7 @@
 <li>The first code block should start with <code>rm(list = ls())</code> to ensure a clean, reproducible workspace.</li>
 <li>NEED TO DISCUSS: formatting of code blocks. Could use <code>tidy = TRUE</code> as one option.</li>
 <li>If you need to leave a note in a vignette, please use this <a href="https://github.com/cbeleites/SKELETON/pull/147#issuecomment-646685392">method</a>.</li>
+<li>Figure sizes are largely standardized, via the hook defined in <code>vignette-default-settings.R</code>. See the discussion there.</li>
 </ul>
 </div>
 <div id="working-with-git" class="section level2">
@@ -283,7 +297,7 @@ This is important since <strong>pkgdown</strong> uses the <code>.9000</code> to 
 
       <footer>
       <div class="copyright">
-  <p>Developed by Claudia Beleites, Erick Oduniyi, Vilmantas Gegzna, Bryan A. Hanson.</p>
+  <p>Developed by Claudia Beleites, <a href='https://orcid.org/0000-0002-9500-5167'>Vilmantas Gegzna</a>, <a href='http://academic.depauw.edu/hanson_web/'>Bryan A. Hanson</a>.</p>
 </div>
 
 <div class="pkgdown">
