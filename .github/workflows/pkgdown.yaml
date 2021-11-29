@@ -26,10 +26,10 @@ jobs:
 
       - uses: r-lib/actions/setup-r-dependencies@v1
         with:
-          extra-packages: pkgdown
           needs: website
           extra-packages: |
-             devtools
+            pkgdown
+            devtools
 
       - name: Roxygenize
         # The vignettes will be built in step "Deploy package"
