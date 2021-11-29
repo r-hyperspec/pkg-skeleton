@@ -16,9 +16,15 @@
 ^github-helpers$
 ^\.github$
 ^pkgdown$
+^data-raw$
+^docs$
+^_tmp$
 
 # Helper files
+Makefile
 ^CONTRIBUTING\.md$
 ^README\.md$
+^README\.Rmd$
 ^codecov\.yml$
 ^_pkgdown\.yml$
+
