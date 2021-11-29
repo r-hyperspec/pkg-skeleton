@@ -6,7 +6,7 @@ Description: Short Description of the package.
 Version: 0.0.0.9000
 Date: 2021-11-01
 Authors@R: c(
-    person("Claudia",   "Beleites",  role = c("aut"), email = "Claudia.Beleites@chemometrix.gmbh"),
+    person("Claudia",   "Beleites",  role = c("aut", "cre"), email = "Claudia.Beleites@chemometrix.gmbh"),
     person("Vilmantas", "Gegzna",    role = "aut", comment = c(ORCID = "0000-0002-9500-5167")),
     person("Bryan A.",  "Hanson",    role = "aut", comment = c(ORCID = "0000-0003-3536-8246"))
     )
