@@ -127,7 +127,6 @@ repos <- c("https://r-hyperspec.github.io/pkg-repo/", getOption("repos"))
 install.packages("hySpc.skeleton", repos = repos)
 ```
 
-
 ### Install from GitHub
 
 <details>
@@ -194,3 +193,7 @@ Usually, "Windows" users need to download, install and properly configure **Rtoo
 
 </details>
 
+
+## For Developers
+
+Developers can find information about automatic deployment from this repo to `pkg-repo` [here](https://github.com/r-hyperspec/pkg-repo) in `CONTRIBUTING.md`.
