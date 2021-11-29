@@ -8,6 +8,8 @@
 ^\.Rproj\.user$
 
 # Directories
+^github-helpers$
+^\.github$
 ^pkgdown$
 ^data-raw$
 ^docs$
