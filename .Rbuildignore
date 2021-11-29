@@ -28,3 +28,6 @@ Makefile
 ^codecov\.yml$
 ^_pkgdown\.yml$
 
+
+# Package specific
+^inst/extdata/chondro\.gz$
