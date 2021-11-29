@@ -4,6 +4,7 @@
 template:
   params:
     bootswatch: cerulean
+    noindex: false
 
 # -------------------------------------------------------------------------
 # Automatically switches, which verion should be built:
@@ -25,9 +26,9 @@ development:
 #       menu:
 #       - text: "Documentation for version of package:"
 #       - text: Released
-#         href: https://r-hyperspec.github.io/ [..pkg-name...] /
+#         href: https://r-hyperspec.github.io/SKELETON/
 #       - text: In-development
-#         href: https://r-hyperspec.github.io/ [...pkg-name...] /dev/
+#         href: https://r-hyperspec.github.io/SKELETON/dev/
 
 # -------------------------------------------------------------------------
 # # If you need custom webpage for articles, modify this section:
@@ -50,7 +51,11 @@ development:
 # -------------------------------------------------------------------------
 # # If you need links for authors, modify this section:
 
-# authors:
+authors:
+  Bryan A. Hanson:
+    href: http://academic.depauw.edu/hanson_web/
+  Vilmantas Gegzna:
+    href: https://orcid.org/0000-0002-9500-5167
 #   First-name Family-name:
 #     href: https://some.url
 
