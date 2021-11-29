@@ -1,7 +1,12 @@
-<!-- # Original file resides in r-hyperspec/pkg-skelton.
-# Do not edit in any other repo.
+<!--
+# READ-ONLY FILE
+#
+# Original file resides in r-hyperspec/pkg-skelton.
+# DO NOT EDIT in any other repo as these changes will be overwritten.
 # Edit at r-hyperspec/pkg-skelton, then push there and
-# this file will be deployed. -->
+# this file will be deployed to the other repos.
+#
+-->
 <?xml version="1.0" encoding="utf-8"?>
 <style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="sort-only" default-locale="en-US">
   <info>

@@ -1,7 +1,10 @@
+# READ-ONLY FILE
+#
 # Original file resides in r-hyperspec/pkg-skelton.
-# Do not edit in any other repo.
+# DO NOT EDIT in any other repo as these changes will be overwritten.
 # Edit at r-hyperspec/pkg-skelton, then push there and
-# this file will be deployed.
+# this file will be deployed to the other repos.
+#
 
 # Citation/Bibliography ======================================================
 
