@@ -11,16 +11,14 @@
 ^\.Rproj\.user$
 
 # Directories
-^github-helpers$
 ^\.github$
-^pkgdown$
+^github-helpers$
 ^data-raw$
 ^docs$
+^pkgdown$
 ^_tmp$
 
 # Helper files
-^\.github$
-^github-helpers$
 ^codecov\.yml$
 ^NEWS\.html$
 ^CONTRIBUTING\.md$
@@ -38,7 +36,7 @@ Rplots.pdf
 ^.*\.pdf
 
 ### Package-specific ###
+^Vignettes-Rnw$
 ^inst/extdata/chondro\.gz$
 tests/testthat/fileio
-
 
