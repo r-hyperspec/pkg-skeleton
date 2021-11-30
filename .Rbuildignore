@@ -34,6 +34,7 @@
 
 # Helper files
 ^CONTRIBUTING\.md$
+^LICENSE\.md$
 ^NEWS\.html$
 ^README\.md$
 ^README\.Rmd$
