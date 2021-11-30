@@ -38,6 +38,10 @@ jobs:
         .Rbuildignore
         pkgdown/extra.css
         project.Rproj
+# FILES_TO_SKIP are REPO + PATH_TO_FILE in the repo.
+# These files are skipped ONLY in section "Copy Required Non-Vig Files":
+      FILES_TO_SKIP: |
+        r-hyperspec/hyperSpec/.github/workflows/R-CMD-check.yaml
 
       FILES_IF_PRESENT: |
         codecov.yml
@@ -53,11 +57,6 @@ jobs:
 #         vignettes/vignette-functions.R
 #         vignettes/vignette.css
 
-#       FILES_TO_SKIP are REPO + PATH_TO_FILE in the repo.
-#       These files are skipped ONLY in section
-#       "Copy Required Non-Vig Files":
-      FILES_TO_SKIP: |
-        r-hyperspec/hyperSpec/.github/workflows/R-CMD-check.yaml
 
     strategy:
       matrix:
