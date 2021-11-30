@@ -58,7 +58,7 @@ jobs:
 #       "Copy Required Non-Vig Files":
       FILES_TO_SKIP: |
         r-hyperspec/hyperSpec/.github/workflows/R-CMD-check.yaml
-        hySpc.dplyr/.github/workflows/R-CMD-check.yaml
+        r-hyperspec/hySpc.dplyr/.github/workflows/R-CMD-check.yaml
 
     strategy:
       matrix:
@@ -107,21 +107,30 @@ jobs:
           do
             CURRENT_FILE="${{ matrix.pkgs }}/$f" # repo + path to file
 
-            for TO_SKIP in $FILES_TO_SKIP
+            count_skips=()
+            for TO_SKIP in $FILES_TO_SKIP;
             do
-                echo [[ "$CURRENT_FILE" == "$TO_SKIP" ]]
-                if [[ "$CURRENT_FILE" == "$TO_SKIP" ]]
-                then
-                    echo "--- SKIP ---"
-                    echo "- x Skipping file:  $f"
-                    echo ""
-                else
-                    echo "---- DO ----"
-                    echo "- v Syncing file:   $f"
-                    # rsync -Rrtpgov $f tmp-repo-dir/
-                    echo ""
-                fi
+              if [[ "$CURRENT_FILE" == "$TO_SKIP" ]];
+              then count_skips+=(1);
+              else count_skips+=(0);
+              fi
             done
+
+            n_to_skip=()
+            n_to_skip=$(( ${count_skips[@]/%/ +} 0)) # sum values
+
+            if [[ "$n_to_skip" == 0 ]];
+            then
+              echo "---- DO ----"
+              echo "- v Syncing file:   $f"
+              # rsync -Rrtpgov $f tmp-repo-dir/
+              echo ""
+
+            else
+              echo "--- SKIP ---"
+              echo "- x Skipping file:  $f"
+              echo ""
+            fi
           done
 
       # - name: Conditionally Copy Optional Non-Vig Files
