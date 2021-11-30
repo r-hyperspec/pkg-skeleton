@@ -12,20 +12,18 @@
 
 # Directories
 ^\.github$
-^github-helpers$
+^_tmp$
 ^data-raw$
 ^docs$
+^github-helpers$
 ^pkgdown$
-^_tmp$
 
 # Helper files
+^_pkgdown\.yml$
 ^codecov\.yml$
-^NEWS\.html$
 ^CONTRIBUTING\.md$
 ^README\.md$
 ^README\.Rmd$
-^codecov\.yml$
-^_pkgdown\.yml$
 Makefile
 
 # Unwanted files
@@ -36,7 +34,7 @@ Rplots.pdf
 ^.*\.pdf
 
 ### Package-specific ###
-^Vignettes-Rnw$
 ^inst/extdata/chondro\.gz$
+^Vignettes-Rnw$
 tests/testthat/fileio
 
