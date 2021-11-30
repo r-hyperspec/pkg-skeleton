@@ -30,13 +30,14 @@ jobs:
       FILES: |
         .github/workflows/drat--insert-package.yaml
         .github/workflows/R-CMD-check.yaml
-        .github/workflows/test-coverage.yaml
         .github/workflows/pkgdown.yaml
         pkgdown/extra.css
         .gitignore
         .Rbuildignore
-        codecov.yml
         project.Rproj
+      FILES_IF_PRESENT: |
+        codecov.yml
+        .github/workflows/test-coverage.yaml
       VIG_FILES: |
         vignettes/.install_extras
         vignettes/elsevier-with-titles.csl
@@ -75,12 +76,22 @@ jobs:
           git checkout develop
           # echo Successfully cloned ${{ matrix.pkgs }}
 
-      - name: Copy Non-Vig Files
+      - name: Copy Required Non-Vig Files
         if: success()
         run: |
           for f in $FILES
           do
             rsync -Rrtpgov $f tmp-repo-dir/
+          done
+
+      - name: Conditionally Copy Optional Non-Vig Files
+        if: success()
+        run: |
+          for f in $FILES_IF_PRESENT
+          do
+            if [ -f "tmp-repo-dir/$f" ]; then
+              rsync -Rrtpgov $f tmp-repo-dir/
+            fi
           done
 
       - name: Conditionally Copy Vignette Files
