@@ -15,6 +15,11 @@
 on:
   push:
     branches:
+      - release
+      - main
+      - master
+      - develop
+
       - auto-update
 
 name: Update files
