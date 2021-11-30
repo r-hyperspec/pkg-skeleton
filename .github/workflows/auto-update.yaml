@@ -51,11 +51,10 @@ jobs:
     strategy:
       matrix:
         pkgs:
+          - r-hyperspec/hyperSpec
           - r-hyperspec/hySpc.chondro
-
-
           - r-hyperspec/hySpc.dplyr
-          - r-hyperspec/hySpc.read.ggplot2
+          - r-hyperspec/hySpc.ggplot2
           - r-hyperspec/hySpc.read.ENVI
           - r-hyperspec/hySpc.read.jdx
           - r-hyperspec/hySpc.read.mat
