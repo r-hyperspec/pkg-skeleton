@@ -29,25 +29,36 @@ jobs:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
       DEST_BRANCH: auto-update-test
       # DEST_BRANCH: develop
-      FILES: |
+      FILES_REQUIRED: |
+        .github/.gitignore
+        .github/workflows/drat--insert-package.yaml
         .github/workflows/pkgdown.yaml
+        .github/workflows/R-CMD-check.yaml
+        .gitignore
+        .Rbuildignore
         pkgdown/extra.css
         project.Rproj
-#   .gitignore
-#   .Rbuildignore
-#   .github/workflows/drat--insert-package.yaml
-#   .github/workflows/R-CMD-check.yaml
+
       FILES_IF_PRESENT: |
         codecov.yml
         .github/workflows/test-coverage.yaml
+
 #       VIG_FILES: |
-#         vignettes/style.css
+#         vignettes/.gitignore
 #         vignettes/.install_extras
 #         vignettes/elsevier-with-titles.csl
 #         vignettes/list-of-vignettes.md
+#         vignettes/style.css
 #         vignettes/vignette-default-settings.R
 #         vignettes/vignette-functions.R
 #         vignettes/vignette.css
+
+      # FILES_TO_SKIP are REPO + PATH_TO_FILE in the repo.
+      # These files are skipped ONLY in section
+      # "Copy Required Non-Vig Files":
+      FILES_TO_SKIP:
+        r-hyperspec/hyperSpec/.github/workflows/R-CMD-check.yaml
+
     strategy:
       matrix:
         pkgs:
@@ -77,7 +88,7 @@ jobs:
           git config --global user.email "$actions@github.com"
           git config --global user.name "${REPO} Deploy Bot"
 
-      - name: Clone Packages
+      - name: Clone Package's Repo
         if: success()
         run: |
           echo "Cloning ${{ matrix.pkgs }} repo"
@@ -91,25 +102,40 @@ jobs:
       - name: Copy Required Non-Vig Files
         if: success()
         run: |
-          for f in $FILES
+          for f in $FILES_REQUIRED
           do
-            echo "- v Syncing file:   $f"
-            rsync -Rrtpgov $f tmp-repo-dir/
+            CURRENT_FILE="${{ matrix.pkgs }}/$f" # repo + path to file
+
+            for TO_SKIP in "${{ FILES_TO_SKIP }}"
+            do
+                echo [[ "$CURRENT_FILE" == "$TO_SKIP" ]]
+                if [[ "$CURRENT_FILE" == "$TO_SKIP" ]]
+                then
+                    echo "--- SKIP ---"
+                    echo "- x Skipping file:  $f"
+                    echo ""
+                else
+                    echo "---- DO ----"
+                    echo "- v Syncing file:   $f"
+                    # rsync -Rrtpgov $f tmp-repo-dir/
+                    echo ""
+                fi
+            done
           done
 
-      - name: Conditionally Copy Optional Non-Vig Files
-        if: success()
-        run: |
-          for f in $FILES_IF_PRESENT
-          do
-            if [ -f "tmp-repo-dir/$f" ]
-            then
-              echo "- v Syncing file:   $f"
-              rsync -Rrtpgov $f tmp-repo-dir/
-            else
-              echo "- x Skipping file:  $f"
-            fi
-          done
+      # - name: Conditionally Copy Optional Non-Vig Files
+      #   if: success()
+      #   run: |
+      #     for f in $FILES_IF_PRESENT
+      #     do
+      #       if [ -f "tmp-repo-dir/$f" ]
+      #       then
+      #         echo "- v Syncing file:   $f"
+      #         rsync -Rrtpgov $f tmp-repo-dir/
+      #       else
+      #         echo "- x Skipping file:  $f"
+      #       fi
+      #     done
 
       # - name: Conditionally Copy Vignette Files
       #   if: success()
@@ -123,15 +149,15 @@ jobs:
       #       done
       #     fi
 
-      - name: Commit and Push
-        if: success()
-        run: |
-          cd tmp-repo-dir
-          if [ -n "$(git status --porcelain)" ]; then
-            git status
-            git add .
-            git commit -m 'Automated file update from pkg-skeleton'
-            git push origin $DEST_BRANCH
-          else
-            echo "Nothing to commit";
-          fi
+      # - name: Commit and Push
+      #   if: success()
+      #   run: |
+      #     cd tmp-repo-dir
+      #     if [ -n "$(git status --porcelain)" ]; then
+      #       git status
+      #       git add .
+      #       git commit -m 'Automated file update from pkg-skeleton'
+      #       git push origin $DEST_BRANCH
+      #     else
+      #       echo "Nothing to commit";
+      #     fi
