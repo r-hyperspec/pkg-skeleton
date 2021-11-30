@@ -43,11 +43,6 @@ Makefile
 Rplots.pdf
 
 
-# Other/Broad
-^.*\.html
-^.*\.pdf
-
-
 ### Package-specific ###
 ^inst/extdata/chondro\.gz$
 ^inst/extdata/winspec.pdf$
