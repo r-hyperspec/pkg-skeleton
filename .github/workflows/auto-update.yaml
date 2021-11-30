@@ -81,7 +81,7 @@ jobs:
         run: |
           for f in $FILES
           do
-            echo "v Syncing file   $f"
+            echo "- v Syncing file:   $f"
             rsync -Rrtpgov $f tmp-repo-dir/
           done
 
@@ -90,13 +90,12 @@ jobs:
         run: |
           for f in $FILES_IF_PRESENT
           do
-            echo "File $f"
             if [ -f "tmp-repo-dir/$f" ]
             then
-              echo "v Syncing file   $f"
+              echo "- v Syncing file:   $f"
               rsync -Rrtpgov $f tmp-repo-dir/
             else
-              echo "x Skipping file  $f"
+              echo "- x Skipping file:  $f"
             fi
           done
 
@@ -107,7 +106,7 @@ jobs:
           then
             for f in $VIG_FILES
             do
-              echo "v Syncing file   $f"
+              echo "- v Syncing file:   $f"
               rsync -Rrtpgov $f tmp-repo-dir/
             done
           fi
