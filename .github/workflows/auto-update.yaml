@@ -58,6 +58,7 @@ jobs:
 #       "Copy Required Non-Vig Files":
       FILES_TO_SKIP: |
         r-hyperspec/hyperSpec/.github/workflows/R-CMD-check.yaml
+        hySpc.dplyr/.github/workflows/R-CMD-check.yaml
 
     strategy:
       matrix:
