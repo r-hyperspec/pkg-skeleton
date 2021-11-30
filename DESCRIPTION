@@ -21,7 +21,8 @@ Imports:
     hySpc.testthat
 Suggests:
     knitr,
-    covr
+    covr,
+    rmarkdown
 URL: 
     https://r-hyperspec.github.io/SKELETON,
     https://github.com/r-hyperspec/SKELETON
@@ -33,4 +34,3 @@ Collate:
     'demo_function.R'
     'package.R'
     'unittestdata.R'
-
