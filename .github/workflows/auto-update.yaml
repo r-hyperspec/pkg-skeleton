@@ -58,7 +58,6 @@ jobs:
 #       "Copy Required Non-Vig Files":
       FILES_TO_SKIP: |
         r-hyperspec/hyperSpec/.github/workflows/R-CMD-check.yaml
-        r-hyperspec/hySpc.dplyr/.github/workflows/R-CMD-check.yaml
 
     strategy:
       matrix:
@@ -122,30 +121,34 @@ jobs:
             if [[ "$n_to_skip" == 0 ]];
             then
               echo "---- DO ----"
-              echo "- v Syncing file:   $f"
-              # rsync -Rrtpgov $f tmp-repo-dir/
+              echo "- [v] Sync file:   $f"
+              rsync -Rrtpgov $f tmp-repo-dir/
               echo ""
 
             else
               echo "--- SKIP ---"
-              echo "- x Skipping file:  $f"
+              echo "- [x] Skip file:  $f"
               echo ""
             fi
           done
 
-      # - name: Conditionally Copy Optional Non-Vig Files
-      #   if: success()
-      #   run: |
-      #     for f in $FILES_IF_PRESENT
-      #     do
-      #       if [ -f "tmp-repo-dir/$f" ]
-      #       then
-      #         echo "- v Syncing file:   $f"
-      #         rsync -Rrtpgov $f tmp-repo-dir/
-      #       else
-      #         echo "- x Skipping file:  $f"
-      #       fi
-      #     done
+      - name: Conditionally Copy Optional Non-Vig Files
+        if: success()
+        run: |
+          for f in $FILES_IF_PRESENT
+          do
+            if [ -f "tmp-repo-dir/$f" ]
+            then
+              echo "---- DO ----"
+              echo "- [v] Sync file:   $f"
+              rsync -Rrtpgov $f tmp-repo-dir/
+              echo ""
+            else
+              echo "--- SKIP ---"
+              echo "- [x] Skip file:  $f"
+              echo ""
+            fi
+          done
 
       # - name: Conditionally Copy Vignette Files
       #   if: success()
@@ -154,20 +157,22 @@ jobs:
       #     then
       #       for f in $VIG_FILES
       #       do
-      #         echo "- v Syncing file:   $f"
+      #         echo "---- DO ----"
+      #         echo "- [v] Syncing file:   $f"
       #         rsync -Rrtpgov $f tmp-repo-dir/
+      #         echo ""
       #       done
       #     fi
 
-      # - name: Commit and Push
-      #   if: success()
-      #   run: |
-      #     cd tmp-repo-dir
-      #     if [ -n "$(git status --porcelain)" ]; then
-      #       git status
-      #       git add .
-      #       git commit -m 'Automated file update from pkg-skeleton'
-      #       git push origin $DEST_BRANCH
-      #     else
-      #       echo "Nothing to commit";
-      #     fi
+      - name: Commit and Push
+        if: success()
+        run: |
+          cd tmp-repo-dir
+          if [ -n "$(git status --porcelain)" ]; then
+            git status
+            git add .
+            git commit -m 'Automated file update from pkg-skeleton'
+            git push origin $DEST_BRANCH
+          else
+            echo "Nothing to commit";
+          fi
