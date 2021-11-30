@@ -12,6 +12,7 @@ on:
       - main
       - master
       - develop
+      - auto-update-test
 
   pull_request:
     branches:
