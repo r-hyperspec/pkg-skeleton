@@ -53,9 +53,9 @@ jobs:
 #         vignettes/vignette-functions.R
 #         vignettes/vignette.css
 
-      # FILES_TO_SKIP are REPO + PATH_TO_FILE in the repo.
-      # These files are skipped ONLY in section
-      # "Copy Required Non-Vig Files":
+#       FILES_TO_SKIP are REPO + PATH_TO_FILE in the repo.
+#       These files are skipped ONLY in section
+#       "Copy Required Non-Vig Files":
       FILES_TO_SKIP: |
         r-hyperspec/hyperSpec/.github/workflows/R-CMD-check.yaml
 
@@ -106,7 +106,7 @@ jobs:
           do
             CURRENT_FILE="${{ matrix.pkgs }}/$f" # repo + path to file
 
-            for TO_SKIP in "${{ FILES_TO_SKIP }}"
+            for TO_SKIP in $FILES_TO_SKIP
             do
                 echo [[ "$CURRENT_FILE" == "$TO_SKIP" ]]
                 if [[ "$CURRENT_FILE" == "$TO_SKIP" ]]
