@@ -33,7 +33,7 @@ on:
     branches:
       - develop
 
-      - auto-update
+      # - auto-update
       - auto-update-test
 
 name: Insert package (drat)
