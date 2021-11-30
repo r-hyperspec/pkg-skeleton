@@ -189,7 +189,7 @@ Update examples as needed.</li>
 Build and check locally. Chase out the demons.</li>
 <li>
 <input type="checkbox" disabled>
-Create a new vignette for this package, starting from the relevant vignette in original <code>hyperSpec</code>.</li>
+Create a new vignette for this package, starting from the relevant vignette in original <code>hyperSpec</code>. The support files are already present. If you don’t want a vignette, delete the entire vignette folder.</li>
 <li>
 <input type="checkbox" disabled>
 Build and check locally again, fixing any remaining problems.</li>
@@ -199,6 +199,14 @@ Create a pull request as described in <code>CONTRIBUTING.md</code>.</li>
 <li>
 <input type="checkbox" disabled>
 Rinse and repeat to reach perfection!</li>
+</ul>
+</li>
+<li>
+<input type="checkbox" disabled>
+Workflows:<ul>
+<li>
+<input type="checkbox" disabled>
+Update the branches in <code>.github/workflows/drat--insert-package.yaml</code>. Triggering branches are set to NONE in <code>pkg-skeleton</code> because we don’t want <code>pkg-skeleton</code> to be deployed to the repo.</li>
 </ul>
 </li>
 <li>
