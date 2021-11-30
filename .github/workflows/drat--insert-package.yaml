@@ -32,8 +32,9 @@ on:
   push:
     branches:
       - develop
-      - auto-update
-      - auto-update-test
+
+      # - auto-update
+      # - auto-update-test
 
 name: Insert package (drat)
 
