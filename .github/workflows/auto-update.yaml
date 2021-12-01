@@ -22,7 +22,7 @@ on:
 
       - auto-update
 
-name: Update files
+name: Update files across repos
 # name: Update selected files in selected repos
 
 
