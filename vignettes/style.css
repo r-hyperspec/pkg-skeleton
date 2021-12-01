@@ -1,4 +1,4 @@
-/*
+/* 
 # READ-ONLY FILE
 #
 # Original file resides in r-hyperspec/pkg-skelton.
@@ -14,6 +14,10 @@
 }
 
 /* --- Info boxes --------------------------------------------------------- */
+
+.add-border {
+  border: 5px solid #9F6000;
+}
 
 div.redbox {
   color:            #C8000C;

@@ -39,10 +39,12 @@ When creating a new package (repository):
     - [ ] Update unit tests as needed.
     - [ ] Update examples as needed.
     - [ ] Build and check locally. Chase out the demons.
-    - [ ] Create a new vignette for this package, starting from the relevant vignette in original `hyperSpec`.
+    - [ ] Create a new vignette for this package, starting from the relevant vignette in original `hyperSpec`.  The support files are already present.  If you don't want a vignette, delete the entire vignette folder.
     - [ ] Build and check locally again, fixing any remaining problems.
     - [ ] Create a pull request as described in `CONTRIBUTING.md`.
     - [ ] Rinse and repeat to reach perfection!
+- [ ] Workflows:
+  - [ ] Update the branches in `.github/workflows/drat--insert-package.yaml`.  Triggering branches are set to NONE in `pkg-skeleton` because we don't want `pkg-skeleton` to be deployed to the repo.
 - [ ] _update this list of TODOs_
 - [ ] Delete this TODO section.
 
