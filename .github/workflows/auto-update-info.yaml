@@ -6,12 +6,13 @@ jobs:
     steps:
       - name: Info
         run: |
-          echo "Commit message: ${{ github.event.commits.message }}"
+          echo "Commit message: ${{ github.event.commits[0].message }}"
+          echo "Commit message: ${{ github.event.head_commit.message }}"
 
       - name: Info 2
         env:
           MSG: ${{ github.event.commits.message }}
-        run: echo "MSG"
+        run: echo "$MSG"
 
       - name: Info github
         run: |
