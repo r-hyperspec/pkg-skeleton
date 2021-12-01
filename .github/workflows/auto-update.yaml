@@ -33,8 +33,8 @@ jobs:
       REPO: ${{ github.event.repository.name }}
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
 
-      DEST_BRANCH: auto-update-test
-      # DEST_BRANCH: develop
+      # DEST_BRANCH: auto-update-test
+      DEST_BRANCH: develop
 
       FILES_REQUIRED: |
         .github/.gitignore
