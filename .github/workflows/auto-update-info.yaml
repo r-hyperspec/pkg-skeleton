@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Info
-        run: echo "${{ event.commits.message }}"
+        run: echo "${{ github.event.commits.message }}"
 
       - name: Dump GitHub context
         env:
