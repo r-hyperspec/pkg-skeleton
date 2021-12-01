@@ -5,7 +5,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Info
-        run: echo "${{ github.event.commits.message }}"
+        run: echo "Commit message: ${{ github.event.commits.message }}"
+
+      - name: Info github
+        run: echo "Commit message: ${{ github.event.commits }}"
 
       - name: Dump GitHub context
         env:
