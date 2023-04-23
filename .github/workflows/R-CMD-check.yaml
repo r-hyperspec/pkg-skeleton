@@ -14,7 +14,7 @@ on:
     branches: [main, master, develop, release]
   schedule:
     # (see https://crontab.guru)
-    - chron: "20 4 * */2 THU"
+    - cron: "20 4 * */2 THU"
 
 name: R-CMD-check
 
