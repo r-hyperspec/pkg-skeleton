@@ -13,7 +13,6 @@
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 on:
-  workflow_dispatch:
   push:
     branches:
       - release
@@ -33,10 +32,8 @@ jobs:
     env:
       REPO: ${{ github.event.repository.name }}
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
-
       # DEST_BRANCH: auto-update-test
       DEST_BRANCH: develop
-
       FILES_REQUIRED: |
         .github/.gitignore
         .github/workflows/drat--insert-package.yaml
@@ -83,7 +80,7 @@ jobs:
           - r-hyperspec/hySpc.testthat
 
     steps:
-      - uses: actions/checkout@v2 # checks out current repo
+      - uses: actions/checkout@v3 # checks out current repo
 
       - name: Configure git
         # The following configure step is from
