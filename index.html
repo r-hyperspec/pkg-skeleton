@@ -44,7 +44,7 @@
   <a href="reference/index.html">Reference</a>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Articles
      
     <span class="caret"></span>
@@ -85,10 +85,9 @@
 </h1></div>
 <p>Repository <strong><code>hySpc.skeleton</code></strong> is a package template (“skeleton”) for <strong><code>r-hyperspec</code></strong> family packages.</p>
 <p>When creating a new package (repository):</p>
-<ul>
+<ul class="task-list">
 <li>
-<input type="checkbox" disabled>
-replace words <code>SKELETON</code> and <code>hySpc.skeleton</code> with the new package name in:<ul>
+<input type="checkbox" disabled>replace words <code>SKELETON</code> and <code>hySpc.skeleton</code> with the new package name in:<ul class="task-list">
 <li>
 <input type="checkbox" disabled><code>DESCRIPTION</code>
 </li>
@@ -108,33 +107,25 @@ replace words <code>SKELETON</code> and <code>hySpc.skeleton</code> with the new
 <input type="checkbox" disabled><code>tests/testthat/test_attached.R</code>
 </li>
 <li>
-<input type="checkbox" disabled>
-other files</li>
+<input type="checkbox" disabled>other files</li>
 </ul>
 </li>
 <li>
-<input type="checkbox" disabled>
-update <code>DESCRIPTION</code>:<ul>
+<input type="checkbox" disabled>update <code>DESCRIPTION</code>:<ul class="task-list">
 <li>
-<input type="checkbox" disabled>
-title</li>
+<input type="checkbox" disabled>title</li>
 <li>
-<input type="checkbox" disabled>
-description</li>
+<input type="checkbox" disabled>description</li>
 <li>
-<input type="checkbox" disabled>
-the list of authors and contributors</li>
+<input type="checkbox" disabled>the list of authors and contributors</li>
 <li>
-<input type="checkbox" disabled>
-license</li>
+<input type="checkbox" disabled>license</li>
 <li>
-<input type="checkbox" disabled>
-other fields</li>
+<input type="checkbox" disabled>other fields</li>
 </ul>
 </li>
 <li>
-<input type="checkbox" disabled>
-update licensing information in<ul>
+<input type="checkbox" disabled>update licensing information in<ul class="task-list">
 <li>
 <input type="checkbox" disabled><code>DESCRIPTION</code>
 </li>
@@ -145,85 +136,63 @@ update licensing information in<ul>
 <input type="checkbox" disabled><code>README.md</code>
 </li>
 <li>
-<input type="checkbox" disabled>
-elswhere</li>
+<input type="checkbox" disabled>elswhere</li>
 </ul>
 </li>
 <li>
-<input type="checkbox" disabled>
-update <code>README</code>:<ul>
+<input type="checkbox" disabled>update <code>README</code>:<ul class="task-list">
 <li>
-<input type="checkbox" disabled>
-update badges</li>
+<input type="checkbox" disabled>update badges</li>
 <li>
-<input type="checkbox" disabled>
-update installation instructions (e.g., instead of <code>devtools::install(build_vignettes = TRUE)</code> the following code might be more appropriate if no vignettes are included <code><a href="https://devtools.r-lib.org/reference/install.html" class="external-link">devtools::install()</a></code>)</li>
+<input type="checkbox" disabled>update installation instructions (e.g., instead of <code>devtools::install(build_vignettes = TRUE)</code> the following code might be more appropriate if no vignettes are included <code><a href="https://devtools.r-lib.org/reference/install.html" class="external-link">devtools::install()</a></code>)</li>
 <li>
-<input type="checkbox" disabled>
-update other information, if needed.</li>
+<input type="checkbox" disabled>update other information, if needed.</li>
 </ul>
 </li>
 <li>
-<input type="checkbox" disabled>
-create issue labels:<ul>
+<input type="checkbox" disabled>create issue labels:<ul class="task-list">
 <li>
-<input type="checkbox" disabled>
-apply github labels (in <code>github-helpers/</code>),</li>
+<input type="checkbox" disabled>apply github labels (in <code>github-helpers/</code>),</li>
 <li>
-<input type="checkbox" disabled>
-delete <code>github-helpers/</code>
+<input type="checkbox" disabled>delete <code>github-helpers/</code>
 </li>
 </ul>
 </li>
 <li>
-<input type="checkbox" disabled>
-Code &amp; Vignettes:<ul>
+<input type="checkbox" disabled>Code &amp; Vignettes:<ul class="task-list">
 <li>
-<input type="checkbox" disabled>
-Be sure to review <code>CONTRIBUTING.md</code> which describes the standard operating procedures for the <code>r-hyperspec</code> project.</li>
+<input type="checkbox" disabled>Be sure to review <code>CONTRIBUTING.md</code> which describes the standard operating procedures for the <code>r-hyperspec</code> project.</li>
 <li>
-<input type="checkbox" disabled>
-Copy the code needed for this new package from the original <code>hyperSpec</code> files. Leave the old code untouched for now, as <code>hyperSpec</code> has to continue to operate.</li>
+<input type="checkbox" disabled>Copy the code needed for this new package from the original <code>hyperSpec</code> files. Leave the old code untouched for now, as <code>hyperSpec</code> has to continue to operate.</li>
 <li>
-<input type="checkbox" disabled>
-Update the code and write new code as needed.</li>
+<input type="checkbox" disabled>Update the code and write new code as needed.</li>
 <li>
-<input type="checkbox" disabled>
-Update unit tests as needed.</li>
+<input type="checkbox" disabled>Update unit tests as needed.</li>
 <li>
-<input type="checkbox" disabled>
-Update examples as needed.</li>
+<input type="checkbox" disabled>Update examples as needed.</li>
 <li>
-<input type="checkbox" disabled>
-Build and check locally. Chase out the demons.</li>
+<input type="checkbox" disabled>Build and check locally. Chase out the demons.</li>
 <li>
-<input type="checkbox" disabled>
-Create a new vignette for this package, starting from the relevant vignette in original <code>hyperSpec</code>. The support files are already present. If you don’t want a vignette, delete the entire vignette folder.</li>
+<input type="checkbox" disabled>Create a new vignette for this package, starting from the relevant vignette in original <code>hyperSpec</code>. The support files are already present. If you don’t want a vignette, delete the entire vignette folder.</li>
 <li>
-<input type="checkbox" disabled>
-Build and check locally again, fixing any remaining problems.</li>
+<input type="checkbox" disabled>Build and check locally again, fixing any remaining problems.</li>
 <li>
-<input type="checkbox" disabled>
-Create a pull request as described in <code>CONTRIBUTING.md</code>.</li>
+<input type="checkbox" disabled>Create a pull request as described in <code>CONTRIBUTING.md</code>.</li>
 <li>
-<input type="checkbox" disabled>
-Rinse and repeat to reach perfection!</li>
+<input type="checkbox" disabled>Rinse and repeat to reach perfection!</li>
 </ul>
 </li>
 <li>
-<input type="checkbox" disabled>
-Workflows:<ul>
+<input type="checkbox" disabled>Workflows:<ul class="task-list">
 <li>
-<input type="checkbox" disabled>
-Update the branches in <code>.github/workflows/drat--insert-package.yaml</code>. Triggering branches are set to NONE in <code>pkg-skeleton</code> because we don’t want <code>pkg-skeleton</code> to be deployed to the repo.</li>
+<input type="checkbox" disabled>Update the branches in <code>.github/workflows/drat--insert-package.yaml</code>. Triggering branches are set to NONE in <code>pkg-skeleton</code> because we don’t want <code>pkg-skeleton</code> to be deployed to the repo.</li>
 </ul>
 </li>
 <li>
 <input type="checkbox" disabled><em>update this list of TODOs</em>
 </li>
 <li>
-<input type="checkbox" disabled>
-Delete this TODO section.</li>
+<input type="checkbox" disabled>Delete this TODO section.</li>
 </ul>
 <hr>
 <!-- END: delete this TODO section, when not needed --><!-- ---------------------------------------------------------------------- --><!-- badges: start -->
@@ -282,17 +251,18 @@ install.packages("hySpc.skeleton")
 </h3>
 <p>The <strong>recommended</strong> way to install the in-development version:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">repos</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"https://r-hyperspec.github.io/pkg-repo/"</span>, <span class="fu"><a href="https://rdrr.io/r/base/options.html" class="external-link">getOption</a></span><span class="op">(</span><span class="st">"repos"</span><span class="op">)</span><span class="op">)</span>
-<span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"hySpc.skeleton"</span>, repos <span class="op">=</span> <span class="va">repos</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="va">repos</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"https://r-hyperspec.github.io/pkg-repo/"</span>, <span class="fu"><a href="https://rdrr.io/r/base/options.html" class="external-link">getOption</a></span><span class="op">(</span><span class="st">"repos"</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"hySpc.skeleton"</span>, repos <span class="op">=</span> <span class="va">repos</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level3">
 <h3 id="install-from-github">Install from GitHub<a class="anchor" aria-label="anchor" href="#install-from-github"></a>
 </h3>
-<details><p><summary>Install from GitHub (details)</summary></p>
-<p>You can install the in-development version of the package from <a href="https://github.com/r-hyperspec/hySpc.skeleton" class="external-link">GitHub</a> too:</p>
+<details><summary>
+Install from GitHub (details)
+</summary><p>You can install the in-development version of the package from <a href="https://github.com/r-hyperspec/hySpc.skeleton" class="external-link">GitHub</a> too:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw">if</span> <span class="op">(</span><span class="op">!</span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">require</a></span><span class="op">(</span><span class="va"><a href="https://remotes.r-lib.org" class="external-link">remotes</a></span><span class="op">)</span><span class="op">)</span> <span class="op">{</span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"remotes"</span><span class="op">)</span><span class="op">}</span>
-<span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"r-hyperspec/hySpc.skeleton"</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="kw">if</span> <span class="op">(</span><span class="op">!</span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">require</a></span><span class="op">(</span><span class="va"><a href="https://remotes.r-lib.org" class="external-link">remotes</a></span><span class="op">)</span><span class="op">)</span> <span class="op">{</span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"remotes"</span><span class="op">)</span><span class="op">}</span></span>
+<span><span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"r-hyperspec/hySpc.skeleton"</span><span class="op">)</span></span></code></pre></div>
 <p><strong>NOTE 1:</strong> Usually, “Windows” users need to download, install and properly configure <strong>Rtools</strong> (see <a href="https://cran.r-project.org/bin/windows/Rtools/" class="external-link">these instructions</a>) to make the code above work.</p>
 <p><strong>NOTE 2:</strong> This method will <strong>not</strong> install package’s documentation (help pages and vignettes) into your computer. So you can either use the <a href="https://r-hyperspec.github.io/" class="external-link">online documentation</a> or build the package from source (see the next section).</p>
 </details>
@@ -300,8 +270,9 @@ install.packages("hySpc.skeleton")
 <div class="section level3">
 <h3 id="install-from-source">Install from Source<a class="anchor" aria-label="anchor" href="#install-from-source"></a>
 </h3>
-<details><p><summary>Install from Source (details)</summary></p>
-<ol style="list-style-type: decimal">
+<details><summary>
+Install from Source (details)
+</summary><ol style="list-style-type: decimal">
 <li>From the <strong>hySpc.skeleton</strong>’s GitHub <a href="https://github.com/r-hyperspec/hySpc.skeleton" class="external-link">repository</a>:
 <ul>
 <li>If you use Git, <code>git clone</code> the branch of interest. You may need to fork it before cloning.</li>
@@ -325,20 +296,20 @@ install.packages("hySpc.skeleton")
 </li>
 </ol>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="co"># Do not abort installation even if some packages are not available</span>
-<span class="fu"><a href="https://rdrr.io/r/base/Sys.setenv.html" class="external-link">Sys.setenv</a></span><span class="op">(</span>R_REMOTES_NO_ERRORS_FROM_WARNINGS <span class="op">=</span> <span class="st">"true"</span><span class="op">)</span>
-
-<span class="co"># Install packages remotes and devtools</span>
-<span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"remotes"</span>, <span class="st">"devtools"</span><span class="op">)</span><span class="op">)</span>
-
-<span class="co"># Install hySpc.skeleton's dependencies</span>
-<span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_deps.html" class="external-link">install_deps</a></span><span class="op">(</span>dependencies <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span>
-
-<span class="co"># Create hySpc.skeleton's documentation</span>
-<span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://devtools.r-lib.org/reference/document.html" class="external-link">document</a></span><span class="op">(</span><span class="op">)</span>
-
-<span class="co"># Install package hySpc.skeleton</span>
-<span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://devtools.r-lib.org/reference/install.html" class="external-link">install</a></span><span class="op">(</span>build_vignettes <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="co"># Do not abort installation even if some packages are not available</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/Sys.setenv.html" class="external-link">Sys.setenv</a></span><span class="op">(</span>R_REMOTES_NO_ERRORS_FROM_WARNINGS <span class="op">=</span> <span class="st">"true"</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># Install packages remotes and devtools</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"remotes"</span>, <span class="st">"devtools"</span><span class="op">)</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># Install hySpc.skeleton's dependencies</span></span>
+<span><span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_deps.html" class="external-link">install_deps</a></span><span class="op">(</span>dependencies <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># Create hySpc.skeleton's documentation</span></span>
+<span><span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://devtools.r-lib.org/reference/document.html" class="external-link">document</a></span><span class="op">(</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># Install package hySpc.skeleton</span></span>
+<span><span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://devtools.r-lib.org/reference/install.html" class="external-link">install</a></span><span class="op">(</span>build_vignettes <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code></pre></div>
 <p><strong>NOTE 1:</strong> Usually, “Windows” users need to download, install and properly configure <strong>Rtools</strong> (see <a href="https://cran.r-project.org/bin/windows/Rtools/" class="external-link">these instructions</a>) to make the code above work.</p>
 </details>
 </div>
@@ -416,7 +387,7 @@ install.packages("hySpc.skeleton")
 
 <div class="pkgdown">
   <p></p>
-<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.2.</p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.7.</p>
 </div>
 
       </footer>
