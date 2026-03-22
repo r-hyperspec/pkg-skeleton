@@ -6,6 +6,7 @@
 # this file will be deployed to the other repos.
 #
 on:
+  workflow_dispatch:
   push:
     branches:
       - release
