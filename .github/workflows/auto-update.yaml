@@ -31,10 +31,12 @@ jobs:
     env:
       REPO: ${{ github.event.repository.name }}
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
       # DEST_BRANCH: auto-update-test
       DEST_BRANCH: develop
       FILES_REQUIRED: |
         .github/.gitignore
+        .github/dependabot.yml
         .github/ISSUE_TEMPLATE/config.yml
         .github/ISSUE_TEMPLATE/1_bug_report.yml
         .github/ISSUE_TEMPLATE/2_feature_request.yml
@@ -182,7 +184,7 @@ jobs:
             timestamp=$(date +"%Y-%m-%d %H:%M:%S")
             git status
             git add .
-            git commit -m "Automated file update from pkg-skeleton ($timestamp)"
+            git commit -m "Auto-update from pkg-skeleton ($timestamp)"
             git push origin $DEST_BRANCH
           else
             echo "Nothing to commit";
