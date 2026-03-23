@@ -86,7 +86,7 @@ jobs:
           - r-hyperspec/hySpc.testthat
 
     steps:
-      - uses: actions/checkout@v4 # checks out current repo
+      - uses: actions/checkout@v6 # checks out current repo
 
       - name: Configure git
         # The following configure step is from
